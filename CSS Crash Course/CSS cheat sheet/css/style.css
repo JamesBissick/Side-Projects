@@ -1,0 +1,217 @@
+/* -- '*'  basically means everything
+* {
+    margin: 0; 
+} 
+-- */
+
+
+body {
+    background-color: #f4f4f4;
+    color: #555555; /* Any text we put in body will be grey by default */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+
+    /* Same as above */
+    font: normal 16px Arial, Helvetica, sans-serif;
+
+    line-height: 1.4em; 
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+}
+
+a:hover {
+    color: crimson;
+}
+
+a:active {
+    color: green;
+}
+
+
+
+.container {
+    /* width: 960px;  Not responsive because fixed */
+    width: 80%; /* That is responsive */
+    margin: auto; /* It puts an even margin on both side, it's a great way to center responsive */
+}
+
+.button {
+    background-color: #333333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+}
+
+.button:hover {
+    background: crimson !important;
+    color: #fff !important;
+}
+
+
+.clr {
+    clear: both;
+}
+
+.box-1 {
+    background-color: #333333;
+    color: #fff;
+    margin: 5px 10px;
+    /*  border-top: 5px solid red;
+        border-right: 5px solid red;
+        border-left: 5px solid red;
+        border-bottom: 5px solid red;
+    */
+    border: 5px solid red;
+    border-width: 3px;
+    border-bottom-width: 10px;
+    border-bottom-style: dotted;
+
+
+    /* and if i put a last bit exactly like border: 5px solid red; it will override everything before it */
+
+    border: 5px solid red; /* override border values above */
+    padding: 20px;
+    margin-top: 20px;
+    margin: 20px 0; /* Top and Bottom has a pargin of 20px but Left and Right has a margin of 0 */
+}
+
+.box-1 h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    word-spacing: 0.8em;
+}
+
+.box-2 {
+    border: 3px dotted #cccccc;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.categories {
+    border: 1px solid grey;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.categories h2 {
+    text-align: center;
+}
+
+.categories ul {
+    padding: 0;
+    padding-left: 20px;
+    list-style: square;
+    list-style: none;
+}
+
+.categories li {
+    padding-bottom: 6px;
+    border-bottom: dotted 1px #333333;
+    list-style-image: url("../img/check.png") /* I use a check mark png */
+}
+
+.myform {
+    padding: 20px;
+}
+
+.myform .form-group { /* .form-group is inside .myform so don't forget to put it before */
+    padding-bottom: 15px;
+}
+
+.myform label {
+    display: block; /* Puts everything in a block, looks cleaner and tidier */
+}
+
+.myform input[type="text"], .myform textarea {
+    padding: 9px;
+    width: 100%;
+}
+
+.myform input[type="submit"] {
+    background-color: #333333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+}
+
+.block {
+    float: left;
+    width: 33.334%;
+    border: 1px solid #cccccc;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+
+#main-block {
+    float: left;
+    width: 70%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#sidebar {
+    float: right;
+    width: 30%;
+    background-color: #333333;
+    color: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.p-box {
+    width: 800px;
+    height: 500px;
+    border: 1px solid #000000;
+    margin-top: 30px;
+    position: relative;
+    background-image: url('../img/bgimage.jpg');
+    background-repeat: no-repeat;
+/*  background-position: 100px 200px; */ /* We can use either pixels or words like center, etc */
+    background-position: center center;
+    
+
+}
+
+.p-box h1 {
+    position: absolute;
+    top: 100px;
+    left: 200px;
+}
+
+.p-box h2 {
+    position: absolute;
+    bottom: 40px;
+    right: 100px;
+}
+
+.fix-me {
+    position: fixed;
+    top: 400px;
+}
+
+.mylist li:first-child {
+    background: red;
+}
+
+.mylist li:last-child {
+    background: blue;
+}
+
+.mylist li:nth-child(5) {
+    background: yellow;
+}
+
+.mylist li:nth-child(even) { /* the value even is particularly useful for dynamically generated items */
+    background: grey;
+}
