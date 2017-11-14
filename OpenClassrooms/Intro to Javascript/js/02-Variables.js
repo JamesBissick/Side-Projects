@@ -23,3 +23,23 @@ between a string and a number causes the concatenation of two values into a resu
 
 var f = 100;
 console.log("The f variable contains the value of: " + 100);
+
+/* JavaScript is very tolerant in terms of type conversion. However, sometimes conversion isn't possible. 
+If a number fails to convert, you'll get the result NaN  (Not a Number). */
+
+var g = "five" * 2;
+console.log(g); // Shows NaN
+
+/* Sometimes you'll wish to convert the value of another type. This is called explicit conversion. 
+JavaScript has the Number() and String() commands for this that convert numbers and strings. */
+
+var h = "5";
+console.log(h + 1); // Concatenation: shows the string "51"
+h = Number("5");
+console.log(h + 1); // Addition: show the number 6
+
+
+// -- User interactions
+
+var name = prompt("Hello, what is your name?");
+alert("Hello " + name + ".");
