@@ -1,0 +1,6 @@
+/* There was a little gape with the navbar margin and the border radius was round on the corner
+so I got rid of both here */
+.navbar{
+    margin: 0;
+    border-radius: 0;
+}
