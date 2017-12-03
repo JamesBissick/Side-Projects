@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Basic CSS3</title>
+    </head>
+
+    <body>
+
+        <h1>Mon super site</h1>
+        <p>Bonjour et <span class="salutation">bienvenu</span> sur mon site !</p>
+        <p>Pour le moment, mon site est un peu <em>vide</em>. Patientez encore un peu !</p>
+        <!-- 
+            On peut mettre un attribut class sur n'importe quelle balise:
+            <h1 class="..."></h1> 
+            <p class="..."></p> 
+            <img class="..." alt="..."/>
+            
+            Class est utilisé pour identifier une balise plus facilement! -->
+
+        <p class="introduction">Soyez le bienvenu et faites comme chez vous!</p>
+        <p>Ici, je vais mettre du contenu qui d'ailleurs sera mis à jours  
+        <em>régulièrement</em>. Ne soyez pas pressé, ça arrive!</p>
+
+        <img id="logo" src="./img/marmite.jpg" alt="Logo Marmite!" title="Logo Marmite!">
+        
+        <h3>Lorem Ipsum</h3>
+        <p>
+            Praesent vulputate dictum lorem, in cursus tellus iaculis at. Sed eleifend ante sed metus lobortis, 
+            et aliquet ex congue. Nunc accumsan mauris ut augue aliquam volutpat. Vivamus eget erat quis velit 
+            convallis accumsan quis ac leo. <em>Vivamus suscipit odio mi.</em> Sed ac turpis in dui rhoncus consectetur. 
+            Etiam ornare justo eget dapibus ullamcorper. In id pretium libero. Class aptent taciti sociosqu ad 
+            litora torquent per conubia nostra, per inceptos <em>himenaeos</em>. Mauris quam erat, dictum at fermentum in, 
+            congue eu nisl. <em>Aenean sit amet massa iaculis</em>, iaculis sem quis, porttitor libero. 
+            Nullam in vestibulum massa.
+        </p>
+        <p>
+            Ut justo ligula, tempus eu sapien et, rhoncus rhoncus libero. Etiam non dictum lacus. 
+            Suspendisse vulputate libero non urna tincidunt, non porttitor dui auctor. 
+            Aenean venenatis, est a laoreet euismod, eros diam suscipit metus, in commodo felis dui vitae velit. 
+            Aenean laoreet, lorem in posuere congue, metus eros <em>fringilla</em> massa, ac lacinia massa mauris et lectus. 
+            Aenean dapibus sodales urna sagittis rutrum. Nullam pharetra ex elementum suscipit aliquam. 
+            Sed <em>pharetra</em> iaculis mi et egestas. Suspendisse finibus mi id justo commodo, vel luctus turpis tempor. 
+            Donec ac aliquet ligula, ac consectetur dolor. <br>
+            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+            Cras malesuada imperdiet erat, eu fringilla est <em>dapibus eu</em>. Nam commodo sem id nulla interdum consectetur. 
+            Nam interdum tellus vel mi euismod, ut vehicula ante congue. 
+            Phasellus scelerisque <em>sollicitudin metus</em>, vel ornare turpis commodo sit amet.
+        </p>
+
+        <hr>
+
+        <h3>Titre avec <em>formatage du texte</em> en valeur relative.</h3>
+
+        <ul class="taille-relative">
+            <li>xx-small : minuscule</li>
+            <li>x-small : très petit</li>
+            <li>small : petit</li>
+            <li>medium : moyen</li>
+            <li>large : grand</li>
+            <li>x-large : très grand</li>
+            <li>xx-large : euh... gigantesque</li>
+        </ul>
+        
+        <hr>
+
+        <h3>Titre avec <em>formatage du texte</em> grâce à em.</h3>
+
+        <ul class="taille-relative-em">
+            <li>Titre #1</li>
+            <li>Titre #2</li>
+            <li>Titre #3</li>
+            <li>Titre #4</li>
+            <li>Titre #5</li>
+            <li>Titre #6</li>
+            <li>Titre #7</li>
+        </ul>
+
+        <hr>
+
+        <h3>Titre avec <em>formatage du texte</em> en pourcentage.</h3>
+
+        <ul class="taille-relative-percent">
+            <li>Titre #1</li>
+            <li>Titre #2</li>
+            <li>Titre #3</li>
+            <li>Titre #4</li>
+            <li>Titre #5</li>
+            <li>Titre #6</li>
+            <li>Titre #7</li>
+        </ul>
+
+        <hr>
+
+        <h3>Voici une liste de polices qui fonctionnent bien sur la plupart des navigateurs: </h3>
+
+        <ul class="liste-police">
+            <li>Arial;</li>
+            <li>Arial Black;</li>
+            <li>Comic Sans MS;</li>
+            <li>Courier New;</li>
+            <li>Georgia;</li>
+            <li>Impact;</li>
+            <li>Times New Roman;</li>
+            <li>Trebuchet MS;</li>
+            <li>Verdana;</li>
+        </ul>
+
+        <hr>
+
+        <h3>Italique, gras, souligné...</h3>
+        <p class="italic-gras-souligne">
+            Ut justo ligula, tempus eu sapien et, rhoncus rhoncus libero. Etiam non dictum lacus. 
+            Suspendisse vulputate libero non urna tincidunt, non porttitor dui auctor. 
+            Aenean venenatis, est a laoreet euismod, eros diam suscipit metus, in <span>commodo felis dui vitae</span> velit. 
+            Aenean laoreet, lorem in posuere congue, metus eros <em>fringilla</em> massa, ac lacinia massa mauris et lectus. 
+            Aenean dapibus sodales urna sagittis rutrum. Nullam pharetra ex elementum suscipit aliquam. 
+            Sed <em>pharetra</em> iaculis mi et egestas. Suspendisse finibus mi id justo commodo, vel luctus turpis tempor. 
+            Donec ac aliquet ligula, ac consectetur dolor. <br>
+            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+            Cras malesuada imperdiet erat, eu fringilla est <em>dapibus eu</em>. Nam commodo sem id nulla interdum consectetur. 
+            Nam interdum tellus vel mi euismod, ut vehicula ante congue. 
+            Phasellus scelerisque <em>sollicitudin metus</em>, vel ornare turpis commodo sit amet.
+        </p>
+
+        <br>
+
+        <ul class="soulignement">
+            <li>underline:souligné.</li>
+            <li>line-through : barré.</li>
+            <li>overline : ligne au-dessus.</li>
+            <li>blink : clignotant (ne fonctionne pas sur IE et Chrome :c )</li>
+            <li>none : normal (par défaut)</li>
+        </ul>
+
+
+        <p class="text-1">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae metus ac leo vehicula dignissim. 
+            Nulla pharetra ultricies neque sit amet blandit. Aliquam commodo lectus massa, ac commodo est placerat vel. 
+            Proin condimentum ornare orci, quis mattis neque sagittis ultricies. Pellentesque bibendum, massa eget 
+            pellentesque vestibulum, nulla leo ultricies ligula, sed pellentesque leo ipsum a nulla. 
+            Etiam neque arcu, tristique sed neque in, luctus tristique leo. Maecenas vel metus eget tellus sodales 
+            ullamcorper. In et viverra orci. Integer vitae eros aliquet, venenatis lorem sed, rutrum magna. 
+            Integer dignissim ultricies bibendum. Nulla id purus a ligula finibus ornare. 
+            Suspendisse pellentesque arcu et purus tincidunt, imperdiet laoreet justo hendrerit. 
+            Curabitur efficitur ex id cursus lobortis. Vivamus at convallis tortor. 
+            Nullam id tortor eget dui scelerisque pulvinar. Donec nec eros interdum, commodo nisi nec, congue magna.
+        </p>
+        <p class="text-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae metus ac leo vehicula dignissim. 
+            Nulla pharetra ultricies neque sit amet blandit. Aliquam commodo lectus massa, ac commodo est placerat vel. 
+            Proin condimentum ornare orci, quis mattis neque sagittis ultricies. Pellentesque bibendum, massa eget 
+            pellentesque vestibulum, nulla leo ultricies ligula, sed pellentesque leo ipsum a nulla. 
+            Etiam neque arcu, tristique sed neque in, luctus tristique leo. Maecenas vel metus eget tellus sodales 
+            ullamcorper. In et viverra orci. Integer vitae eros aliquet, venenatis lorem sed, rutrum magna. 
+            Integer dignissim ultricies bibendum. Nulla id purus a ligula finibus ornare. 
+            Suspendisse pellentesque arcu et purus tincidunt, imperdiet laoreet justo hendrerit. 
+            Curabitur efficitur ex id cursus lobortis. Vivamus at convallis tortor. 
+            Nullam id tortor eget dui scelerisque pulvinar. Donec nec eros interdum, commodo nisi nec, congue magna.
+        </p>
+        <p class="text-3">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae metus ac leo vehicula dignissim. 
+            Nulla pharetra ultricies neque sit amet blandit. Aliquam commodo lectus massa, ac commodo est placerat vel. 
+            Proin condimentum ornare orci, quis mattis neque sagittis ultricies. Pellentesque bibendum, massa eget 
+            pellentesque vestibulum, nulla leo ultricies ligula, sed pellentesque leo ipsum a nulla. 
+            Etiam neque arcu, tristique sed neque in, luctus tristique leo. Maecenas vel metus eget tellus sodales 
+            ullamcorper. In et viverra orci. Integer vitae eros aliquet, venenatis lorem sed, rutrum magna. 
+            Integer dignissim ultricies bibendum. Nulla id purus a ligula finibus ornare. 
+            Suspendisse pellentesque arcu et purus tincidunt, imperdiet laoreet justo hendrerit. 
+            Curabitur efficitur ex id cursus lobortis. Vivamus at convallis tortor. 
+            Nullam id tortor eget dui scelerisque pulvinar. Donec nec eros interdum, commodo nisi nec, congue magna.
+        </p>
+
+        <hr> <br>
+
+        <p class="float"><img src="./img/marmite.jpg" class="imageflottante" alt="Image flottante"/> 
+            Nulla id purus a ligula finibus ornare. 
+            Praesent vitae metus ac leo vehicula dignissim. Nulla pharetra ultricies neque sit amet blandit. 
+            Aliquam commodo lectus massa, ac commodo est placerat vel. Proin condimentum ornare orci, 
+            quis mattis neque sagittis ultricies. Pellentesque bibendum, massa eget vestibulum, 
+            nulla leo ultricies ligula, sed pellentesque leo ipsum a nulla. Etiam neque arcu, tristique sed neque in, 
+            luctus tristique leo. Maecenas vel metus eget tellus sodales ullamcorper. 
+            In et viverra orci. Integer vitae eros aliquet, venenatis lorem sed, rutrum magna. 
+            Integer dignissim ultricies bibendum. Nulla id purus a ligula finibus ornare. 
+            Suspendisse pellentesque arcu et purus tincidunt, imperdiet laoreet justo hendrerit. 
+            Curabitur efficitur ex id cursus lobortis. Pellentesque bibendum, massa eget 
+            pellentesque vestibulum, nulla leo ultricies ligula, sed pellentesque leo ipsum a nulla. 
+            Etiam neque arcu, tristique sed neque in, luctus tristique leo. Vivamus at convallis tortor.
+            Suspendisse pellentesque arcu et purus tincidunt, imperdiet laoreet justo hendrerit. 
+            Curabitur efficitur ex id cursus lobortis.
+        </p>
+
+        <hr>
+
+        <h3>Héritage</h3>
+
+        <p class="p-background">
+        Ellentesque bibendum, massa eget 
+        pellentesque vestibulum, nulla leo ultricies ligula, sed pellentesque leo ipsum a nulla. 
+        Etiam neque arcu, tristique sed neque in, luctus tristique leo. Maecenas vel metus eget tellus sodales 
+        ullamcorper. <mark>In et viverra orci. Integer vitae eros aliquet, venenatis lorem sed, rutrum magna. 
+        Integer dignissim ultricies bibendum.</mark> Nulla id purus a ligula finibus ornare. 
+        Suspendisse pellentesque arcu et purus tincidunt, imperdiet laoreet justo hendrerit. 
+        Curabitur efficitur ex id cursus lobortis. Vivamus at convallis tortor.
+        Suspendisse pellentesque arcu et purus tincidunt, imperdiet laoreet justo hendrerit. 
+        Curabitur efficitur ex id cursus lobortis. Pellentesque bibendum, massa eget pellentesque vestibulum, 
+        nulla leo ultricies ligula, sed pellentesque leo ipsum a nulla. Etiam neque arcu, tristique sed neque in, 
+        luctus tristique leo. Vivamus at convallis tortor. Suspendisse pellentesque arcu et purus tincidunt, 
+        imperdiet laoreet justo hendrerit. Curabitur efficitur ex id cursus lobortis.
+        Ellentesque bibendum, massa eget 
+        pellentesque vestibulum, nulla leo ultricies ligula, sed pellentesque leo ipsum a nulla. 
+        Etiam neque arcu, tristique sed neque in, luctus tristique leo. Maecenas vel metus eget tellus sodales 
+        ullamcorper. <mark>Vivamus at convallis tortor.</mark> Nulla id purus a ligula finibus ornare. 
+        Suspendisse pellentesque arcu et purus tincidunt, imperdiet laoreet justo hendrerit. 
+        Curabitur efficitur ex id cursus lobortis. 
+        Suspendisse pellentesque arcu et purus tincidunt, imperdiet laoreet justo hendrerit. 
+        Curabitur efficitur ex id cursus lobortis. Pellentesque bibendum, massa eget pellentesque vestibulum, 
+        nulla leo ultricies ligula, sed pellentesque leo ipsum a nulla. Etiam neque arcu, tristique sed neque in, 
+        luctus tristique leo. Vivamus at convallis tortor. Suspendisse pellentesque arcu et purus tincidunt, 
+        imperdiet laoreet justo hendrerit. <mark>Curabitur efficitur ex id cursus lobortis</mark>. <br>
+        </p>
+
+        <hr>
+
+        <h3>Les bordures</h3>
+
+        <div class="border-1">solid</div>
+        <div class="border-2">dotted</div>
+        <div class="border-3">dashed</div>
+        <div class="border-4">double</div>
+        <br><br>
+        <div class="border-5">groove</div>
+        <div class="border-6">ridge</div>
+        <div class="border-7">inset</div>
+        <div class="border-8">outset</div>
+
+        <br>
+
+        <h3>Bordures haut, droit, bas ou gauche</h3>
+
+        <div class="border-9">dotted haut</div>
+        <div class="border-10">dashed bas et droit</div>
+        <div class="border-11">dotted haut et bas</div>
+        <div class="border-12">dashed gauche et droit</div>
+
+        <br><br><br>
+
+        <div class="ombres">Boites à ombres</div>
+
+        <br><br><hr>
+
+        <a href="https://www.google.fr/" class="lien-google">Lien Google</a>
+
+        <br>
+        
+        <p class="p-active">
+            /a/.test("abc"); //true <br>
+            /a/.test("bcd"); //false <br>
+            /a/.test("cba"); //true
+        </p>
+
+        <br>
+
+        <a href="" class="a-focus">
+            Duis est libero, mollis quis maximus in, ultricies ac orci.
+        </a>
+
+        <br><br>
+
+        <a href="" class="lien-visited">Lien visité</a>
+
+    </body>
+
+</html>

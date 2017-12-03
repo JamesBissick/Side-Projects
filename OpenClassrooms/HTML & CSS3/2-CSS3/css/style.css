@@ -1,0 +1,704 @@
+/* ------------------------------------------------------------------------------------------
+
+                            ///      LES BASES DE CSS      ///
+
+-------------------------------------------------------------------------------------------*/
+
+/* Sélectionner plusieurs balise en même temps (ex: h1 et em), on utilise une virgule */
+h1, em {
+    color: crimson;
+}
+
+/* 
+class: précédé par un point, .class
+id: précédé par un diéze, #id
+*/
+
+.introduction {
+    color: cornflowerblue;
+}
+
+#logo {
+    width: 250px;
+}
+
+/* 
+Si on veut modifier l'apparence d'un élément de moindre importance?
+
+<span></span> : balise de type inline, utile pour selectionner un élement de texte
+
+<div></div> : balise de type block, crée un nouveau block dans la page provoquant 
+              un retour à la ligne, utile pour un bloc de texte par exemple ou pour
+              la construction d'un design.
+*/
+
+.salutation {
+    color: blue;
+}
+
+/* Sélecteur universel, càd selectionner toutes les balises: "*". 
+
+* {};
+
+*/
+
+/* Sélectionner un sélecteur b (em) dans un sélecteur parent a (h3). Les appeler, un espace suffit pour signifier 
+la sélection du sélecteur enfant dans le sélecteur parent. */
+
+h3 em {
+    color: blue;
+}
+
+/* Sélectionner une balise qui en suit une autre 
+    Ex: <h3>Titre</h3> 
+        <p>Paragraphe</p>
+
+Sélectionne la première balise <p> située après un titre <h3>. */
+
+h3 + p {
+
+}
+
+/* A[attribut] : une balise qui possède un attribut.
+ Sélectionne tous les liens <a> qui possèdent un attribut title. 
+ ex:   <a href="http://site.com" title="Infobulle">
+*/
+
+a[title] {
+
+}
+
+/* A[attribut="Valeur"] : une balise, un attribut et une valeur exacte 
+    a[title="Cliquez ici"] {
+    }
+*/
+
+/* A[attribut*="Valeur"] : une balise, un attribut et une valeur 
+    a[title*="ici"] {
+    }
+ ex:   <a href="http://site.com" title="Quelque part par ici">
+*/
+
+
+
+
+
+/* Pour connaitre le reste des sélecteurs CSS3: 
+https://www.w3.org/Style/css3-selectors-updates/WD-css3-selectors-20010126.fr.html#selectors */
+
+
+
+
+/* ------------------------------------------------------------------------------------------
+                                    FORMATAGE DU TEXTE
+-------------------------------------------------------------------------------------------*/
+
+/* Taille défini par valeurs absolu en pixels */
+
+p {
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+
+/* Taille défini par valeurs relative.
+Dans cet exemple ne pas oublier de sélectionner les enfants li de la balise parent ul!! 
+
+balise.attribut balise:nthchild() {
+
+}
+*/
+
+ul.taille-relative li:nth-child(1) {
+    font-size: xx-small;
+}
+
+ul.taille-relative li:nth-child(2) {
+    font-size: x-small;
+}
+
+ul.taille-relative li:nth-child(3) {
+    font-size: small;
+}
+
+ul.taille-relative li:nth-child(4) {
+    font-size: medium;
+}
+
+ul.taille-relative li:nth-child(5) {
+    font-size: large;
+}
+
+ul.taille-relative li:nth-child(6) {
+    font-size: x-large;
+}
+
+ul.taille-relative li:nth-child(7) {
+    font-size: xx-large;
+}
+
+
+/* Une autre valeur est disponible, elle est très utile pour le responsive notamment. */
+
+ul.taille-relative-em li:nth-child(1) {
+    font-size: 0.5em;
+}
+
+ul.taille-relative-em li:nth-child(2) {
+    font-size: 0.7em;
+}
+
+ul.taille-relative-em li:nth-child(3) {
+    font-size: 0.9em;
+}
+
+ul.taille-relative-em li:nth-child(4) {
+    font-size: 1.1em;
+}
+
+ul.taille-relative-em li:nth-child(5) {
+    font-size: 1.3em;
+}
+
+ul.taille-relative-em li:nth-child(6) {
+    font-size: 1.5em;
+}
+
+ul.taille-relative-em li:nth-child(7) {
+    font-size: 1.7em;
+}
+
+/* On peut aussi utiliser des pourcentages */
+
+ul.taille-relative-percent li:nth-child(1) {
+    font-size: 50%;
+}
+
+ul.taille-relative-percent li:nth-child(2) {
+    font-size: 75%;
+}
+
+ul.taille-relative-percent li:nth-child(3) {
+    font-size: 100%;
+}
+
+ul.taille-relative-percent li:nth-child(4) {
+    font-size: 125%;
+}
+
+ul.taille-relative-percent li:nth-child(5) {
+    font-size: 150%;
+}
+
+ul.taille-relative-percent li:nth-child(6) {
+    font-size: 175%;
+}
+
+ul.taille-relative-percent li:nth-child(7) {
+    font-size: 200%;
+}
+
+
+/* -------------- POLICE (FONT FAMILY) -------------- */
+
+ul.liste-police li:nth-child(1) {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul.liste-police li:nth-child(2) {
+    font-family: Arial Black, sans-serif;
+}
+
+ul.liste-police li:nth-child(3) {
+    font-family: Comic Sans MS, sans-serif;
+}
+
+ul.liste-police li:nth-child(4) {
+    font-family: Courier New, sans-serif;
+}
+
+ul.liste-police li:nth-child(5) {
+    font-family: Georgia, serif;
+}
+
+ul.liste-police li:nth-child(6) {
+    font-family: Impact, sans-serif;
+}
+
+ul.liste-police li:nth-child(7) {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+ul.liste-police li:nth-child(8) {
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+ul.liste-police li:nth-child(9) {
+    font-family: Verdana, sans-serif;
+}
+
+
+/* -------------- Italique, gras, souligné -------------- */
+
+/* 
+italic : le texte sera mis en italique.
+oblique : le texte sera passé en oblique (les lettres sont penchées).
+normal : le texte sera normal (par défaut).
+
+La propriété CSS pour mettre en gras est font-weight et prend les valeurs suivantes : bold : le texte sera en gras ;
+normal : le texte sera écrit normalement (par défaut).
+*/
+
+p.italic-gras-souligne span {
+    font-style: oblique;
+    font-weight: bold;
+    color: green;
+}
+
+p.italic-gras-souligne em {
+    font-style: italic;
+    font-weight: normal;
+    color: brown;
+}
+
+
+/* -------------- Soulignement et autres décorations -------------- */
+
+/* 
+underline:souligné.
+line-through : barré.
+overline : ligne au-dessus.
+blink : clignotant. Ne fonctionne pas sur tous les navigateurs (Internet Explorer et Google Chrome, notamment). 
+none : normal (par défaut).
+*/
+
+ul.soulignement li:nth-child(1) {
+    text-decoration: underline;
+}
+ul.soulignement li:nth-child(2) {
+    text-decoration: line-through;
+}
+ul.soulignement li:nth-child(3) {
+    text-decoration: overline;
+}
+ul.soulignement li:nth-child(4) {
+    text-decoration: blink;
+}
+ul.soulignement li:nth-child(5) {
+    text-decoration: none;
+}
+
+
+/* -------------- L'alignement -------------- */
+
+/* 
+left : le texte sera aligné à gauche (c'est le réglage par défaut).
+center : le texte sera centré.
+right : le texte sera aligné à droite.
+justify : le texte sera « justifié ». (Justifier le texte permet de faire en sorte qu'il prenne toute la largeur 
+possible sans laisser d'espace blanc à la fin des lignes. Les textes des journaux, par ex, sont toujours justifiés.)
+*/
+
+p.italic-gras-souligne {
+    text-align: center;
+}
+
+/* clear:both permet à l'élément sur lequel est appliquée cette propriété de NE PAS SE METTRE 
+EN FLOAT (et donc on est sûr qu'il se mettra en dessous des autres blocs, qui eux pourraient être en float) */
+hr, br {
+    clear: both; 
+}
+
+p.text-1 {
+    float: left;
+    padding: 5px;
+    width: calc(33.33% - 15px);
+    text-align: left;
+}
+p.text-2 {
+    width: calc(33.33% - 15px);
+    padding: 5px;
+    float: left;
+    text-align: justify;
+}
+p.text-3 {
+    width: calc(33.33% - 15px);
+    padding: 5px;
+    float: left;
+    text-align: right;
+}
+
+/* -------------- FLOAT -------------- */
+
+p.float {
+    width: 33%;
+    margin-left: 33%;
+    clear: both;
+    text-align: justify;
+}
+
+p.float img {
+    width: 33.33%;
+    float: left;
+    margin: 0px 12px 8px 0px;
+}
+
+
+
+/* ------------------------------------------------------------------------------------------
+                                    LA COULEUR ET LE FOND
+-------------------------------------------------------------------------------------------*/
+
+
+/* La Couleur 
+
+-16 noms de couleur utilisables en CSS: maroon;
+-notation hexadécimale: #FFFFFF;
+-notation RGBD: rgb(240,96,204);
+
+*/
+
+/* Couleur de fond */
+body {
+    background-color: white;
+}
+
+
+
+/* ------------------------------------------------------------------------------------------
+                                    LE CSS ET L'HERITAGE
+-------------------------------------------------------------------------------------------*/
+
+
+/* En CSS, si vous appliquez un style à une balise, toutes les balises qui se trouvent à l'intérieur prendront le 
+même style. C'est en fait simple à comprendre et intuitif. La balise <body>, vous le savez, 
+contient entre autres les balises de paragraphe <p> et de titre <h1>.
+
+Si j'applique une couleur de fond noire et une couleur de texte blanche à la balise <body>, tous mes titres 
+et paragraphes auront eux aussi un arrière-plan de couleur noire et un texte de couleur blanche...
+C'est ce phénomène qu'on appelle l'héritage: on dit que les balises qui se trouvent à l'intérieur 
+d'une autre balise « héritent » de ses propriétés. 
+
+C'est d'ailleurs de là que vient le nom « CSS », qui signifie « Cascading Style Sheets », 
+c'est-à-dire « Feuilles de style en cascade ». Les propriétés CSS sont héritées en cascade : si vous donnez 
+un style à un élément, tous les sous- éléments auront le même style.
+*/
+
+mark {
+    background-color: tomato;
+    color: yellow;
+    font-style: oblique;
+}
+
+
+/* background-attachment : fixer le fond 
+
+fixed : l'image de fond reste fixe ;
+scroll : l'image de fond défile avec le texte (par défaut).
+*/
+
+p.p-background {
+    background-image: url("../img/fond.jpg");
+    background-attachment: fixed;
+}
+
+
+/* background-repeat : répétition du fond
+
+no-repeat : le fond ne sera pas répété. L'image sera donc unique sur la page. 
+repeat-x : le fond sera répété uniquement sur la première ligne, horizontalement. 
+repeat-y : le fond sera répété uniquement sur la première colonne, verticalement. 
+repeat : le fond sera répété en mosaïque (par défaut).
+*/
+
+/* background-position : position du fond 
+
+On peut indiquer où doit se trouver l'image de fond avec background-position. Cette propriété n'est intéressante 
+que si elle est combinée avec background-repeat: no-repeat; (un fond qui ne se répète pas). 
+
+top : en haut ; 
+bottom : en bas ; 
+left : à gauche ; 
+center : centré ; 
+right : à droite.
+
+ex: background-position: top right;
+*/
+
+
+/* Ainsi, si je veuxafficher un soleil en image de fond (figure suivante), en un unique exemplaire (no-repeat), 
+toujours visible (fixed) et positionné en haut à droite (top right), je vais écrire ceci : 
+
+body {
+    background-image: url("soleil.png");
+    background-attachment: fixed; (le fond restera fixe)
+    background-repeat: no-repeat;  (le fond ne sera pas répété)
+    background-position: top right; (le fond sera placé en haut à droite)
+}
+
+raccourci possible (super-propriété):
+
+body {
+    background: url("soleil.png") fixed no-repeat top right;
+}
+*/
+
+/* --- Plusieurs images de fond --- */
+
+/* Depuis CSS3, il est possible de donner plusieurs images de fond à un élément. 
+Pour cela, il suffit de séparer les déclarations par une virgule, comme ceci : 
+
+body {
+    background: url("soleil.png") fixed no-repeat top right, url("neige.png") fixed;
+}
+
+La première image de cette liste sera placée par-dessus les autres (figure suivante). 
+Attention donc, l'ordre de déclaration des images a son importance : si vous inversez le soleil et 
+la neige dans le code CSS précédent, vous ne verrez plus le soleil !
+*/
+
+
+/* --- La propriété opacity --- */
+
+/* La propriété opacity, très simple, permet d'indiquer le niveau d'opacité (c'est l'inverse de la transparence).
+
+Avec une valeur de 1, l'élément sera totalement opaque : c'est le comportement par défaut. 
+Avec une valeur de 0, l'élément sera totalement transparent.
+*/
+
+p.p-background mark:nth-child(3) {
+    opacity: 0.6;
+}
+
+
+/* ------------------------------------------------------------------------------------------
+                                LES BORDURES ET LES OMBRES
+-------------------------------------------------------------------------------------------*/
+
+/* 
+Pour border on peut utiliser jusqu'à trois valeurs pour modifier l'apparence de la bordure : 
+
+la largeur: 2px;
+la couleur: black;
+border type:    none -> pas de bordure (par défaut) ; 
+                solid : un trait simple ;
+                dotted -> pointillés ;
+                dashed -> tirets ;
+                double -> bordure double ; 
+                groove : en relief ;
+                ridge -> autre effet relief ;
+                inset -> effet 3D global enfoncé ; 
+                outset : effet 3D global surélevé.
+*/
+
+.border-1 {
+    width: 300px;
+    height: 300px;
+    float: left;
+    margin: 5px;
+    border: 3px black solid;
+}
+
+.border-2 {
+    width: 300px;
+    height: 300px;
+    float: left;
+    margin: 5px;
+    border: 3px goldenrod dotted;
+}
+
+.border-3 {
+    width: 300px;
+    height: 300px;
+    float: left;
+    margin: 5px;
+    border: 3px green dashed;
+}
+
+.border-4 {
+    width: 300px;
+    height: 300px;
+    float: left;
+    margin: 5px;
+    border: 3px black double;
+}
+
+.border-5 {
+    width: 300px;
+    height: 300px;
+    float: left;
+    margin: 5px;
+    clear: both;
+    border: 3px lightgreen groove;
+}
+
+.border-6 {
+    width: 300px;
+    height: 300px;
+    float: left;
+    margin: 5px;
+    border: 3px crimson ridge;
+}
+
+.border-7 {
+    width: 300px;
+    height: 300px;
+    float: left;
+    margin: 5px;
+    border: 3px blue inset
+}
+
+.border-8 {
+    width: 300px;
+    height: 300px;
+    float: left;
+    margin: 5px;
+    border: 3px teal outset;
+}
+
+/* Une bordure pour une face précise?
+
+border-top : bordure du haut;
+border-bottom : bordure du bas; 
+border-left : bordure de gauche; 
+border-right : bordure de droite;
+
+border-top-width : width de la bordure top;
+border-top-color : couleur de la bordure top;
+*/
+
+.border-9 {
+    width: 300px;
+    height: 300px;
+    float: left;
+    margin: 5px;
+    border-top: 3px orangered dotted;
+}
+
+.border-10 {
+    width: 300px;
+    height: 300px;
+    float: left;
+    margin: 5px;
+    border-bottom: 3px olive dashed;
+    border-right: 3px olive dashed;
+}
+
+.border-11 {
+    width: 300px;
+    height: 300px;
+    float: left;
+    margin: 5px;
+    border-top: 3px violet dotted;
+    border-bottom: 3px violet dotted;
+}
+
+.border-12 {
+    width: 300px;
+    height: 300px;
+    float: left;
+    margin: 5px;
+    border-left: 3px orange dotted;
+    border-right: 3px orange dotted;
+}
+/* ----------- Bordures arrondies ----------- */
+
+
+/* La propriété border-radius va nous permettre d'arrondir facilement les angles de n'importe quel élément. 
+Il suffit d'indiquer la taille (« l'importance ») de l'arrondi en pixels : */
+
+p.p-background {
+border-radius: 10px;
+}
+
+p.p-background {
+border-radius: 10px 8px 10px 8px;
+}
+
+/* 
+Les valeurs correspondent auxangles suivants dans cet ordre :
+1. en haut à gauche ; 2. en haut à droite ; 3. en bas à droite; 4. en bas à gauche.
+*/
+
+/* ---------------------------------------------------------------------------------------------------------
+Enfin, il est possible d'affiner l'arrondi de nos angles en créant des courbes elliptiques figure suivante). 
+Dans ce cas, il faut indiquer deuxvaleurs séparées par une barre oblique (slash, caractère /). 
+Le mieux est certainement de tester pour voir l'effet :
+
+p {
+border-radius: 20px / 10px;
+}
+--------------------------------------------------------------------------------------------------------- */ 
+
+
+
+/* -------------------------- LES OMBRES ( box-shadow : les ombres des boîtes) -------------------------- */
+
+/* 
+La propriété box-shadow s'applique à tout le bloc et prend quatre valeurs dans l'ordre suivant :
+1. le décalage horizontal de l'ombre; 
+2. le décalage vertical de l'ombre;
+3. l'adoucissement du dégradé ;
+4. lacouleurdel'ombre.
+*/
+
+/* Par exemple, pour une ombre noire de 6 pixels, sans adoucissement, on écrira : */
+
+p.p-background {
+    box-shadow: 6px 6px 0px black;
+}
+
+.ombres {
+    width: 150px;
+    height: 150px;
+    margin-left: 40%;
+    float: left;
+    border: 2px black dotted;
+    box-shadow: 6px 6px 6px black;
+
+}
+
+/* Ombres de texte */
+.ombres {
+    text-shadow: 2px 2px 4px black;
+}
+
+/* -------- LE SURVOL avec :hover -------- */
+
+a.lien-google:hover {
+    background-color: yellow;
+    color: grey;
+    font-size: 2em;
+}
+
+/* -------- Au clic et lors de la sélection -------- */
+
+p.p-active:active {
+    background-color: cornflowerblue;
+    font-style: oblique;
+    font-size: 1.5em;
+}
+
+a.a-focus {
+    width: 300px;
+    text-align: justify;
+    text-decoration: none;
+}
+
+a.a-focus:focus {
+    background-color: green;
+    color: cornsilk;
+    font-size: 1.5em;
+}
+
+a.lien-visited {
+    font-size: 2em;
+    text-decoration: none;
+}
+
+a.lien-visited:visited {
+    color: red;
+}
