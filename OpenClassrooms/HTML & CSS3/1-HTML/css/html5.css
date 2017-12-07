@@ -26,8 +26,6 @@ nav a {
 
 section {
     width: 90%;
-    height: 800px;
-    text-align: center;
     margin-left: 65px;
 }
 
@@ -42,6 +40,15 @@ section img {
     width: 30%;
     padding: 50px;
     margin-left: 10px;
+}
+
+p.centerblocs {
+width: 350px; /* On a indiqué une largeur (obligatoire) */ 
+margin: auto; /* On peut donc demander à ce que le bloc soit centré avec auto */
+border: 1px solid black; 
+text-align: justify; 
+padding: 12px; 
+margin-bottom: 20px;
 }
 
 hr {
@@ -62,5 +69,12 @@ footer p {
     font-size: 1.2em;
     margin: 15px;
     padding-top: 5px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+h3 {
+    text-align: left;
 }
 
