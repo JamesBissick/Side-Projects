@@ -1,11 +1,11 @@
 body {
-    font-family: 'Lora', serif;
+    font-family: $Lora;
     font-size: 16px;
     line-height: 1.4;
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Source Sans Pro', Helvetica, sans-serif;
+    font-family: $SourceSans;
     font-weight: 900;
     line-height: 1.25;
     
@@ -23,7 +23,7 @@ h2 {
 }
 
 a {
-    color: #BC274C
+    color: $Link;
 }
 
 h3 {
