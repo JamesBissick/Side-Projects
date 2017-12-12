@@ -1,0 +1,39 @@
+/*# sourceMappingURL=main.css.map */
+
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700|Source+Sans+Pro:200,700,900');
+@import 'reset';
+@import 'typography';
+@import 'grid';
+
+// Variables
+$Lora: 'Lora', serif;
+$SourceSans: 'Source Sans Pro', Helvetica, sans-serif;
+$link: #BC274C;
+
+body {
+    font-family: l
+}
+
+.portfolio-piece-1 {
+    background-image: url('../img/cosy-1.jpg')
+}
+
+.portfolio-piece-2 {
+    background-image: url('../img/livingroom-1.jpg')
+}
+
+.portfolio-piece-3 {
+    background-image: url('../img/livingroom-2.jpg')
+}
+
+.portfolio-piece-4 {
+    background-image: url('../img/mezzanine.jpg')
+}
+
+.portfolio-piece-5 {
+    background-image: url('../img/outdoor.jpg')
+}
+
+.portfolio-piece-6 {
+    background-image: url('../img/healthyfood.jpg')
+}
