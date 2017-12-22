@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/positioncss.css">
+    <!--[if lte IE 7]>
+    <link rel="stylesheet" href="style_ie.css" /> <![endif]-->
+    <title>Zozor - Le Site Web</title>
+</head>
+    <body>
+        <header>
+            <h1>Zozor</h1>
+            <h2>Carnets de voyage</h2> 
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Accueil</a></li> 
+                <li><a href="#">Blog</a></li> 
+                <li><a href="#">CV</a></li>
+            </ul>
+        </nav>
+        <section> 
+            <aside>
+                <h1>À propos de l'auteur</h1>
+                <p>C'est moi, Zozor ! Je suis né un 23 novembre 2005.</p>
+            </aside> 
+            
+            <article>
+                <h1>Je suis un grand voyageur</h1>
+                <p>Bla bla bla bla (texte de l'article)</p> 
+                <p>
+                Heureusement, le fait d'avoir transformé les éléments en inline-block nous permet d'utiliser 
+                une nouvelle propriété, normalement réservée auxtable aux: <em>vertical-align</em>.<br>
+                Cette propriété permet de modifier l'alignement vertical des éléments. 
+                Voici quelques-unes des valeurs possibles pour cette propriété :  
+                </p>
+                <ul>
+                    <li><strong>baseline</strong> : aligne de la base de l'élément avec celle de l'élément parent 
+                        (par défaut) ; top : aligne en haut ;
+                    </li>
+                    <li><strong>top</strong> : aligne en haut ;</li>
+                    <li><strong>middle</strong> : centre verticalement ;</li>
+                    <li><strong>bottom</strong> : aligne en bas ;</li>
+                    <li><strong>(valeur en pxou %)</strong> : aligne à une certaine distance de la ligne 
+                        de base (baseline).
+                    </li>
+                </ul>
+                <p>Il existe d'autres techniques un peu particulières permettant de positionner avec précision 
+                    des éléments sur la page :
+                </p>
+
+                <ul>
+                    <li><strong>Le positionnement absolu</strong> : il nous permet de placer un élément 
+                        n'importe où sur la page (en haut à gauche, en bas à droite, tout au centre, etc.).
+                    </li>
+                    <li><strong>Le positionnement fixe</strong> : identique au positionnement absolu mais, 
+                        cette fois, l'élément reste toujours visible, même si on descend plus bas dans la page. <br>
+                        C'est un peu le même principe que background-attachment: fixed; 
+                        (si vous vous en souvenez encore).
+                    </li>
+                    <li><strong>Le positionnement relatif</strong> : permet de décaler l'élément par rapport à 
+                        sa position normale.
+                    </li>
+                </ul>
+
+                <p>Il faut d'abord faire son choixentre les trois modes de positionnement disponibles. 
+                    Pour cela, on utilise la propriété CSS position à laquelle on donne une de ces valeurs :
+                </p>
+                <ul>
+                    <li><strong>absolute</strong> : Le positionnement absolu permet de placer un élément (réellement) 
+                        n'importe où sur la page. Pour effectuer un positionnement absolu, on doit écrire : <br>
+                        Mais cela ne suffit pas ! On a dit qu'on voulait un positionnement absolu, 
+                        mais encore faut-il dire où l'on veut que le bloc soit positionné sur la page. <br><br>
+                        Pour ce faire, on va utiliser quatre propriétés CSS : <br><br>
+                        <ul>
+                            <li><strong>left</strong> : position par rapport à la gauche de la page ;</li>
+                            <li><strong>right</strong> : position par rapport à la droite de la page ;</li>
+                            <li><strong>top</strong> : position par rapport au haut de la page ;</li>
+                            <li><strong>bottom</strong> : position par rapport au bas de la page ;</li>
+                        </ul>
+                        <p>On peut leur donner une valeur en pixels, comme 14px, ou bien une valeur en pourcentage, 
+                            comme 50%.
+                        </p>
+                        <p>Les éléments positionnés en absolu sont placés par-dessus le reste des éléments de la page!
+                            <br> 
+                            Par ailleurs, si vous placez deux éléments en absolu vers le même endroit, ils risquent de 
+                            se chevaucher. Dans ce cas,<br> utilisez la propriété z-index pour indiquer quel élément 
+                            doit apparaître au-dessus des autres.
+                        </p>
+                        <img src="../img/zindex.png" alt="z-index">
+                        
+                    </li>
+                    <li><strong>fixed</strong> : Le principe est exactement le même que pour le positionnement 
+                        absolu sauf que, cette fois, le bloc reste fixe à sa position, <br> 
+                        même si on descend plus bas dans la page.
+                    </li>
+                    <br>
+                    <li><strong>relative</strong> : Plus délicat, le positionnement relatif peut vite devenir 
+                        difficile à utiliser. Ce positionnement permet d'effectuer <br> 
+                        des « ajustements » : l'élément est décalé par rapport à sa position initiale.
+                    </li>
+                </ul>
+
+            </article>
+        </section> 
+        
+        <footer>
+            <p>Copyright Zozor - Tous droits réservés <a href="#">Me contacter !</a></p>
+        </footer>
+    </body>
+</html>

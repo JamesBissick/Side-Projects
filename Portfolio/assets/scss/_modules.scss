@@ -1,0 +1,12 @@
+.button {
+    color: white;
+    background: $Link;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16), 0px 3px 6px 0px rgba(0, 0, 0, 0.23);
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all .25 ease-in-out;
+    &:hover {
+        background-color: lighten($color: $Link, $amount: 3%);
+    }
+}

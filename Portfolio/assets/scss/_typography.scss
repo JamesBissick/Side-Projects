@@ -1,0 +1,64 @@
+body {
+    font-family: $Lora;
+    font-size: 16px;
+    line-height: 1.5;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: $SourceSans;
+    font-weight: 900;
+    line-height: 1.25;
+    
+}
+
+#site-title {
+    font-size: 2rem;
+     font-weight: 200;
+}
+
+h2 {
+    font-size: 2rem;
+    letter-spacing: 1;
+    margin: 0 0 1.5rem;
+    &:before {
+        content: "";
+        padding: .25rem;
+        margin: .5rem;
+        background: $Link;
+    }
+}
+
+a {
+    color: $Link;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.333;
+    text-decoration: underline;
+}
+
+.white {
+    color:white
+}
+
+.center {
+    text-align: center;
+}
+
+.title-flex {
+    &:before {
+        content: "";
+        padding: .25rem;
+        margin: .5rem;
+        background: $Link;
+    }
+}

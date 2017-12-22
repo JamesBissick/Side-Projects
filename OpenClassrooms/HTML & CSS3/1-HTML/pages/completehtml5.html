@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="../css/html5.css">
+        <!-- un petit script, HTML5shiv permet de faire en sorte que les balises s'affichent correctement 
+            sur les anciennes versions d'Internet Explorer (IE6, IE7, IE8). -->
+        <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+        <title>Complete HTML5!</title>
+    </head>
+
+    <body>
+        <!-- UN HEADER -->
+        <header>
+            <a href="#">Mon Site</a>
+        </header>
+
+        <nav>
+            <a href="accueil">Accueil</a>
+            <a href="gallerie">Gallerie</a>
+            <a href="partenaires">Partenaires</a>
+            <a href="contacts">Contacts</a>
+        </nav>
+
+        <section class="1">
+            <h1>Ma section</h1>
+            <hr>
+            <article> 
+                <p>
+                Sed maximus venenatis mi in varius. Aliquam dictum semper felis quis gravida. 
+                Pellentesque id semper odio. Quisque blandit quam maximus congue blandit. 
+                Phasellus eleifend blandit ultricies. Vivamus posuere, est vel ultrices ornare, enim 
+                augue consequat sapien, vitae finibus magna nibh eget lorem. Pellentesque vel velit leo. 
+                Quisque vestibulum ipsum enim, a malesuada orci pretium et. 
+                Donec interdum scelerisque tortor, ac blandit purus mattis a. 
+                Pellentesque scelerisque, erat non porttitor pulvinar, mi felis congue ante, at viverra 
+                purus ipsum vitae velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
+                per inceptos himenaeos. Proin ac imperdiet nisl, nec accumsan magna. 
+                Mauris id arcu et dui facilisis aliquam at quis ipsum. Nunc efficitur lacinia magna eu elementum. 
+                Suspendisse tempus venenatis tellus, sollicitudin condimentum ligula ultricies vestibulum. 
+                Quisque nulla turpis, molestie vitae sagittis at, eleifend vel massa.
+                
+                Sed sed viverra massa. Nunc congue rutrum eleifend. In semper nibh id semper mattis. 
+                Nam porttitor nisi vitae ipsum interdum, eu maximus nisl consequat. 
+                Donec ornare nisl ac venenatis vestibulum. Nulla quis arcu ex. 
+                Aliquam libero dui, maximus et dolor eget, imperdiet ullamcorper dolor. Morbi sed arcu est. 
+                Ut id lectus cursus, rutrum tellus sed, molestie dolor. Phasellus fringilla scelerisque 
+                nunc sit amet interdum. Praesent erat urna, vulputate sed turpis vitae, maximus facilisis nibh. 
+                Maecenas tortor nunc, facilisis eget nunc eu, tincidunt laoreet libero. 
+                Fusce ut dolor convallis, sagittis turpis semper, dictum ligula. Etiam quis ornare purus. 
+                Donec nisl nunc, lobortis non pharetra nec, egestas vitae sem.
+                
+                Sed justo turpis, finibus eget metus sit amet, imperdiet sodales nibh. 
+                Mauris nec risus dignissim, lacinia sapien ac, feugiat odio. 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque semper sed felis nec egestas. 
+                Morbi aliquet non nunc eget aliquam. Proin dignissim venenatis gravida. 
+                Curabitur aliquam volutpat ante. Maecenas semper ultricies blandit.
+                </p>
+            </article>
+            <aside>
+                <img src="https://theartisticlife.files.wordpress.com/2011/04/photobox_setup.jpg" alt="photobox">
+            </aside>
+            <hr>
+        </section>
+        <section class="2">
+            <h2>Le modèle des boites</h2>
+            <br>
+            <h3>Les balises de type block et inline</h3>
+
+            <ul>
+                <li>
+                    <h4><em>Les balises inline : c'est le cas par exemple des liens. 
+                        ex: &lt;span&gt;&lt;&#47;span&gt;</em></h4>
+
+                    <strong>inline</strong> : une balise de type inline se trouve obligatoirement à l'intérieur 
+                    d'une balise block. Une balise inline ne crée pas de retour à la ligne, le texte qui se trouve 
+                    à l'intérieur s'écrit donc à la suite du texte précédent, sur la même ligne 
+                    (c'est pour cela que l'on parle de balise « en ligne »).
+                </li>
+                
+                <li>
+                    <h4><em>Les balises block : c'est le cas par exemple des paragraphes. 
+                        ex: &lt;div&gt;&lt;&#47;div&gt;</em></h4>
+                    
+                    <strong>block</strong>  : une balise de type block sur votre page web crée automatiquement 
+                    un retour à la ligne avant et après. Il suffit d'imaginer tout simplement un bloc. 
+                    Votre page web sera en fait constituée d'une série de blocs les uns à la suite des autres. 
+                    Mais vous verrez qu'en plus, il est possible de mettre un bloc à l'intérieur d'un autre, 
+                    ce qui va augmenter considérablement nos possibilités pour créer le design de notre site !
+                </li>
+            </ul>
+            <hr>
+
+            <h2>Les dimensions</h2>
+
+            <br>
+            <p><em><strong>width</strong> : c'est la largeur du bloc. À exprimer en pixels (px) ou 
+                en pourcentage (%).</em></p>
+            
+            <p><em><strong>height</strong> : c'est la hauteur du bloc. Là encore, on l'exprime soit en pixels (px), 
+                soit en pourcentage (%).</em></p>
+
+            <h3>Minimum et maximum</h3>
+            <p>
+                    On peut demander à ce qu'un bloc ait des dimensions minimales et maximales. 
+                    C'est très pratique car cela nous permet de définir des dimensions « limites » pour 
+                    que notre site s'adapte auxdifférentes résolutions d'écran de nos visiteurs :
+            </p>
+            <ul>
+                <li><strong>min-width</strong> : largeur minimale ;</li>
+                <li><strong>min-height</strong> : hauteur minimale ;</li>
+                <li><strong>max-width</strong> : largeur maximale ;</li>
+                <li><strong>max-height</strong> : hauteur maximale ;</li>
+            </ul>
+
+
+            <h4><em>En CSS, on peut modifier la taille des marges avec les deux propriétés suivantes :</em></h4>
+
+            <ul>
+                <li><strong>padding</strong> : une balise de type inline se trouve obligatoirement à l'intérieur 
+                d'une balise block. Une balise inline ne crée pas de retour à la ligne, le texte qui se trouve 
+                à l'intérieur s'écrit donc à la suite du texte précédent, sur la même ligne 
+                (c'est pour cela que l'on parle de balise « en ligne »).</li> <br>
+
+                <li><strong>margin</strong>  : une balise de type block sur votre page web crée automatiquement 
+                un retour à la ligne avant et après. Il suffit d'imaginer tout simplement un bloc. 
+                Votre page web sera en fait constituée d'une série de blocs les uns à la suite des autres. 
+                Mais vous verrez qu'en plus, il est possible de mettre un bloc à l'intérieur d'un autre, 
+                ce qui va augmenter considérablement nos possibilités pour créer le design de notre site !</li>
+            </ul>
+
+            <h4><em>Voici la liste pour margin</em></h4>
+            <ul>
+                <li><strong>margin-top</strong> : marge extérieure en haut ;</li>
+                <li><strong>margin-bottom</strong> : marge extérieure en bas ;</li>
+                <li><strong>margin-left</strong> : marge extérieure à gauche ;</li>
+                <li><strong>margin-right</strong> : marge extérieure à droite ;</li>
+            </ul>
+
+
+            <h4><em>Voici la liste pour padding</em></h4>
+            <ul>
+                <li><strong>padding-top</strong> : marge intérieur en haut ;</li>
+                <li><strong>padding-bottom</strong> : marge intérieur en bas ;</li>
+                <li><strong>padding-left</strong> : marge intérieur à gauche ;</li>
+                <li><strong>padding-right</strong> : marge intérieur à droite ;</li>
+            </ul>
+
+            <hr>
+            <h2>Centrer des blocs</h2>
+            <p class="centerblocs">Il est tout à fait possible de centrer des blocs. 
+                C'est même très pratique pour réaliser un design 
+                centré quand on ne connaît pas la résolution du visiteur.</p>
+            <h4>Pour centrer, il faut respecter les règles suivantes :</h4>
+            <ul>
+                <li>donnez une largeur au bloc (avec la propriété <strong>width</strong>) ;</li>
+                <li>indiquez que vous voulez des marges extérieures automatiques, 
+                    comme ceci : <strong>margin</strong> : <strong>auto</strong> ;</li>
+            </ul>
+            <h4>Il n'est cependant pas possible de centrer verticalement un bloc avec cette technique. 
+                Seul le centrage horizontal est permis .</h4>
+            <hr>
+
+            <h2>Et quand ça dépasse...? <br> overflow : couper un bloc</h2>
+            <p class="p-overflow">
+                Supposons que vous ayez un long paragraphe et que vous vouliez (pour une raison qui ne regarde que vous)
+                qu'il fasse 250 px de large et 110 px de haut. Ajoutons-lui une bordure et remplissons-le de 
+                texte... à ras-bord (figure suivante) :
+            </p>
+            <p class="example-1">
+                Quisque quis sodales augue. Praesent vel dapibus nibh, sit amet tincidunt est. 
+                Aenean condimentum, sapien quis finibus ornare, magna augue elementum felis, id aliquam 
+                lectus ante ut leo. Suspendisse sit amet lorem in libero molestie placerat. 
+                Cras id felis sed purus maximus egestas non a justo. Vivamus non libero eget augue laoreet 
+                lacinia vitae nec neque. Curabitur nulla urna, congue et urna nec, pretium convallis lectus.
+            </p>
+            <br><br><br><br><br><br><br>
+            <p>Si vous voulez que le texte ne dépasse pas des limites du paragraphe, 
+                il va falloir utiliser la propriété overflow. 
+            <br> Voici les valeurs qu'elle peut accepter :</p>
+
+            <ul>
+                <li><strong>visible </strong>(par défaut) : 
+                    <em>si le texte dépasse les limites de taille, il reste visible et sort volontairement du bloc.</em>
+                </li>
+                <li><strong>hidden</strong> : 
+                    <em>si le texte dépasse les limites, il sera tout simplement coupé. On ne pourra pas voir 
+                        tout le texte.</em></li>
+                <li><strong>scroll</strong> : 
+                    <em>là encore, le texte sera coupé s'il dépasse les limites. Sauf que cette fois, le navigateur 
+                        mettra en place des barres de défilement pour qu'on puisse lire l'ensemble du texte. 
+                        C'est un peu comme un cadre à l'intérieur de la page.</em></li>
+                <li><strong>auto</strong> : 
+                    <em>c'est le mode « pilote automatique ». En gros, c'est le navigateur qui décide de mettre 
+                        ou non des barres de défilement (il n'en mettra que si c'est nécessaire). 
+                        C'est la valeur que je conseille d'utiliser le plus souvent.</em>
+                </li>
+            </ul>
+
+            <p class="example-2">
+                Quisque quis sodales augue. Praesent vel dapibus nibh, sit amet tincidunt est. 
+                Aenean condimentum, sapien quis finibus ornare, magna augue elementum felis, id aliquam 
+                lectus ante ut leo. Suspendisse sit amet lorem in libero molestie placerat. 
+                Cras id felis sed purus maximus egestas non a justo. Vivamus non libero eget augue laoreet 
+                lacinia vitae nec neque. Curabitur nulla urna, congue et urna nec, pretium convallis lectus.
+            </p>
+
+            <p>Essayons maintenant <strong>overflow: auto</strong>; avec le code CSS suivant 
+                (résultat à la figure suivante) :
+            </p>
+
+            <p class="example-3">
+                Quisque quis sodales augue. Praesent vel dapibus nibh, sit amet tincidunt est. 
+                Aenean condimentum, sapien quis finibus ornare, magna augue elementum felis, id aliquam 
+                lectus ante ut leo. Suspendisse sit amet lorem in libero molestie placerat. 
+                Cras id felis sed purus maximus egestas non a justo. Vivamus non libero eget augue laoreet 
+                lacinia vitae nec neque. Curabitur nulla urna, congue et urna nec, pretium convallis lectus.
+            </p>
+
+            <h3>word-wrap : couper les textes trop larges</h3>
+            <p>Si vous devez placer un mot très long dans un bloc, qui ne tient pas dans la largeur, vous allez 
+                adorer word-wrap. Cette propriété permet de forcer la césure des très longs mots (généralement 
+                des adresses un peu longues).
+            </p>
+            <p class="example-4">
+                http://www.superlongueadresse.com/chemin/vers/une/page/web/fichier.html
+            </p>
+            <p>L'ordinateur ne sait pas « couper » l'adresse car il n'y a ni espace, ni tiret. 
+                Il ne sait pas faire la césure. Avec le code suivant (word-wrap: break-word;), 
+                la césure sera forcée dès que le texte risque de dépasser (figure suivante).
+            </p>
+            <p class="example-5">
+                http://www.superlongueadresse.com/chemin/vers/une/page/web/fichier.html
+            </p>
+            <br> 
+            <hr>
+            <h2>Les tableaux</h2>
+
+            <h4>Tableau simple</h4>
+            <p>La première balise à connaître est <strong>&lt;table&gt;&lt;&#47;table&gt;</strong>. 
+                C'est cette balise qui permet d'indiquer le début et la fin d'un tableau. <br>
+                Cette balise est de type bloc, il faut donc la placer en dehors d'un paragraphe. <br>
+            </p>  
+
+            <ul>
+                <li><strong>&lt;caption&gt;&lt;&#47;caption&gt;</strong> : permet d'indiquer le titre du tableau.
+                <p>Sachez que vous pouvez changer la position du titre avec la propriété CSS caption-side 
+                    qui peut prendre deux valeurs :
+                    <ul>
+                        <li><strong>top</strong> : le titre sera placé au-dessus du tableau (par défaut) ;</li>
+                        <li><strong>bottom</strong> : le titre sera placé en dessous du tableau.</li>
+                    </ul>
+                </p>
+                </li>
+                <li>
+                    <strong>&lt;tr&gt;&lt;&#47;tr&gt;</strong> : indique le début et la fin d'une ligne du tableau.
+                </li>
+                <li>
+                    <strong>&lt;th&gt;&lt;&#47;th&gt;</strong> : indique le début et la fin de la 
+                    ligne d'en-tête d'une cellule. C'est la première ligne du tableau.
+                </li>
+                <li>
+                    <strong>&lt;td&gt;&lt;&#47;td&gt;</strong> : indique le début et la fin du contenu d'une cellule.
+                </li>
+            </ul>
+
+            <p>En HTML, un tableau se construit ligne par ligne. Dans chaque ligne (<strong>&lt;tr&gt;</strong>), 
+                on indique le contenu des différentes cellules (<strong>&lt;td&gt;</strong>). <br><br>
+                Exemple:
+            </p>
+
+            <p>Ceci est un paragraphe avant le tableau.</p>
+            <table>
+                <caption>Passager du vol 377</caption>
+                <tr>
+                    <th>Nom</td>
+                    <th>Age</td>
+                    <th>Pays</th>
+                </tr>
+                <tr>
+                    <td>Anne</td>
+                    <td>23 ans</td>
+                    <td>France</td>
+                </tr>
+                <tr>
+                    <td>Carmen</td>
+                    <td>35 ans</td>
+                    <td>Espagne</td>
+                </tr>
+                <tr>
+                    <td>Jason</td>
+                    <td>27 ans</td>
+                    <td>Etats-Unis</td>
+                </tr>
+            </table>
+            <p>Ceci est un paragraphe après le tableau.</p>
+
+            <h3>Diviser un gros tableau</h3>
+            <ul>
+                <li><strong>l'en-tête (en haut)</strong> : 
+                    il se définit avec les balises <strong>&lt;thead&gt;&lt;&#47;thead&gt;</strong>;
+                </li>
+                <li><strong>le corps (au centre)</strong> : 
+                    il se définit avec les balises <strong>&lt;tbody&gt;&lt;&#47;tbody&gt;</strong>;
+                </li>
+                <li><strong>le pied du tableau (en bas)</strong> : 
+                    il se définit avec les balises <strong>&lt;tfoot&gt;&lt;&#47;tfoot&gt;</strong>;
+                </li>
+            </ul>
+            <p>C'est un peu déroutant mais il est conseillé d'écrire les balises dans l'ordre suivant :
+                <ol>
+                    <li>thead</li>
+                    <li>tfoot</li>
+                    <li>tbody</li>
+                </ol>
+            </p>
+            <table>
+                <caption>Passagers du vol 377</caption>
+                <thead> <!-- En-tête du tableau -->
+                    <tr>
+                        <th>Nom</th>
+                        <th>Âge</th>
+                        <th>Pays</th>
+                    </tr>
+                </thead>
+                <tfoot> <!-- Pied du tableau -->
+                    <tr>
+                        <th>Nom</th>
+                        <th>Âge</th>
+                        <th>Pays</th>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr> 
+                        <td>Carmen</td>
+                        <td>33 ans</td>
+                        <td>Espagne</td> </tr>
+                    <tr>
+                        <td>Michelle</td> 
+                        <td>26 ans</td> 
+                        <td>États-Unis</td>
+                    </tr>
+                    <tr> 
+                        <td>François</td> 
+                        <td>43 ans</td> 
+                        <td>France</td>
+                    </tr>
+                    <tr> 
+                        <td>Martine</td>
+                        <td>34 ans</td>
+                        <td>France</td> 
+                    </tr>
+                    <tr>
+                        <td>Jonathan</td> 
+                        <td>13 ans</td> 
+                        <td>Australie</td>
+                    </tr>
+                    <tr> 
+                        <td>Xu</td>
+                        <td>19 ans</td>
+                        <td>Chine</td> 
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>3, 2, 1... Fusioooon !</h3>
+            <p>Dans certains tableaux complexes, vous aurez besoin de « fusionner » des cellules entre elles.
+                Un exemple de fusion ? Regardez le tableau à la figure suivante, qui dresse une liste de films 
+                et indique à qui ils s'adressent.
+            </p>
+            <h4>Colspan</h4>
+            <table> 
+                <tr>
+                    <th>Titre du film</th> 
+                    <th>Pour enfants ?</th> 
+                    <th>Pour adolescents ?</th>
+                </tr>
+                <tr>
+                    <td>Massacre à la tronçonneuse</td> 
+                    <td >Non, trop violent</td> 
+                    <td>Oui</td>
+                </tr>
+                <tr>
+                    <td>Les bisounours font du ski</td> <td>Oui, adapté</td>
+                    <td>Pas assez violent...</td>
+                </tr>
+                <tr>
+                    <td>Lucky Luke, seul contre tous</td>
+                    <td colspan="2">Pour toute la famille !</td>
+                </tr> 
+            </table>
+            <h4>Rowspan</h4>
+            <table> 
+                <tr>
+                    <th>Titre du film</th>
+                    <td>Massacre à la tronçonneuse</td> 
+                    <td>Les bisounours font du ski</td> 
+                    <td>Lucky Luke, seul contre tous</td>
+                </tr>
+                <tr>
+                    <th>Pour enfants ?</th>
+                    <td>Non, trop violent</td>
+                    <td>Oui, adapté</td>
+                    <td rowspan="2">Pour toute la famille !</td>
+                </tr>
+                <tr>
+                    <th>Pour adolescents ?</th> <td>Oui</td>
+                    <td>Pas assez violent...</td>
+                </tr> 
+            </table>
+            <br> <hr>
+
+            <h2>Les Formulaires</h2>
+
+            <h3>Créer un formulaire</h3>
+            <p>Lorsqu'il vous prend subitement l'envie d'insérer un formulaire dans votre page HTML, 
+                vous devez pour commencer écrire une balise <strong>&lt;form&gt;&lt;&#47;form&gt;</strong>. <br>
+                C'est la balise principale du formulaire, elle permet d'en indiquer le début et la fin.
+            </p>
+            <ul>
+                <li><strong><em>method : </em></strong> cet attribut indique par quel moyen les données vont 
+                    être envoyées (réponse au problème n°1). Il existe deux solutions pour envoyer des données 
+                    sur le Web :
+                </li> 
+                <br>
+                    <ul>
+                        <li><strong><em>method="get" : </em></strong>
+                            c'est une méthode en général assez peu adaptée car elle est limitée à 255 caractères. 
+                            La particularité vient du fait que les informations seront envoyées dans l'adresse 
+                            de la page (http://...), mais ce détail ne nous intéresse pas vraiment pour le moment. 
+                            La plupart du temps, je vous recommande d'utiliser l'autre méthode :post.
+                        </li>
+                        <li><strong><em>method="post" : </em></strong>
+                            c'est la méthode la plus utilisée pour les formulaires car elle permet d'envoyer un grand
+                            nombre d'informations. Les données saisies dans le formulaire ne transitent pas 
+                            par la barre d'adresse.
+                        </li>
+                    </ul>
+                <br>
+                <li><strong><em>action : </em></strong>
+                    c'est l'adresse de la page ou du programme qui va traiter les informations 
+                    (réponse au problème n°2). Cette page se chargera de vous envoyer un e-mail avec le message 
+                    si c'est ce que vous voulez, ou bien d'enregistrer le message avec tous les autres dans 
+                    une base de données. <br>
+                    Cela ne peut pas se faire en HTML et CSS, on utilisera en général un autre langage dont 
+                    vous avez peut-être entendu parler : PHP.
+                </li>
+            </ul>
+
+            <h3>Zones de texte uniligne</h3>
+            <p>
+                Pour donner un nom à un élément de formulaire, on utilise l'attribut name. 
+                Ici, on va supposer qu'on demande au visiteur de rentrer son pseudo :
+            </p>
+            
+            <form method="post" action="traitement.php"> 
+                <p><input type="text" name="pseudo" /></p>
+            </form>
+
+            <h4>Les labels</h4>
+            <p>Cette zone de texte est bien jolie mais si votre visiteur tombe dessus, il ne sait pas 
+                ce qu'il doit écrire. C'est justement le rôle de la balise <strong>&lt;label&gt;</strong> :
+            </p>
+            <form method="post" action="traitement.php">
+                <p>
+                    <label for="pseudo">Votre pseudo :</label>
+                    <input type="text" name="pseudo" id="pseudo" placeholder="Entrez votre pseudo ici" 
+                    size="20" maxlength="10"> 
+                </p>
+            </form>
+
+            <h4>Quelques attributs supplémentaires</h4>
+            <ul>
+                <li>On peut agrandir le champ avec <strong>size</strong>.</li>
+                <li>On peut limiter le nombre de caractères que l'on peut saisir avec <strong>maxlength</strong>.</li>
+                <li>On peut pré-remplir le champ avec une valeur par défaut à l'aide de <strong>value</strong>.</li>
+                <li>On peut donner une indication sur le contenu du champ avec <strong>placeholder</strong>. <br>
+                    Cette indication disparaîtra dès que le visiteur aura cliqué à l'intérieur du champ.
+                </li>
+            </ul>
+
+            <h4>Zone de mot de passe</h4>
+            <p>
+                Vous pouvez facilement faire en sorte que la zone de texte se comporte comme 
+                une « zone de mot de passe », c'est-à-dire une zone où on ne voit pas à l'écran les caractères saisis. 
+                Pour créer ce type de zone de saisie, utilisez l'attribut type="password".
+            </p>
+
+            <form method="post" action="traitement.php">
+                <p>
+                    <label for="pseudo">Votre pseudo :</label>
+                    <input type="text" name="pseudo" id="pseudo" placeholder="Votre pseudo ici" >
+                    <br>
+                    <label for="pass">Votre mot de passe :</label>
+                    <input type="password" name="pass" id="pass" minlength="8" placeholder="8 caractères minimum">
+                </p>
+            </form>
+            
+            <h3>Zones de texte multiligne</h3>
+
+            <p>On utilise tout simplement la balise <strong>&lt;textarea&gt;</strong>.</p>
+
+            <form method="post" action="traitement.php">
+                <p>
+                    <label for="ameliorer">Comment pensez-vous que je pourrais améliorer mon site ?</label>
+                    <br>
+                    <textarea name="ameliorer" id="ameliorer"></textarea> 
+                </p>
+            </form>
+
+            <p>Comme vous pouvez le constater, c'est un peu petit ! Heureusement, on peut modifier 
+                la taille du <strong>&lt;textarea&gt;</strong> de deux façons différentes.
+                <ul>
+                    <li>
+                        <strong>En CSS :</strong>il suffit d'appliquer les propriétés CSS <strong>width</strong> 
+                        et <strong>height</strong> au <strong>&lt;textarea&gt;</strong>
+                    </li>
+                    <br>
+                    <li>
+                        <strong>Avec des attributs : </strong>on peut ajouter les attributs rows et cols 
+                        à la balise <strong>&lt;textarea&gt;</strong>. <br>
+                        Le premier indique le nombre de lignes de texte qui peuvent être affichées simultanément, 
+                        et le second le nombre de colonnes.
+                    </li>
+                </ul>
+            </p>
+
+            <form method="post" action="traitement.php">
+                <p>
+                    <label for="ameliorer">Comment pensez-vous que je puisse améliorer mon site ?</label>
+                    <br>
+                    <textarea name="ameliorer" id="ameliorer" rows="10" cols="50">Texte prérempli.
+                    </textarea>
+                </p>
+            </form>
+            <h3>Les zones de saisies enrichies</h3>
+            <h4>E-mail</h4>
+            <p>Vous pouvez demander à saisir une adresse e-mail :</p>
+            <p>
+                Le champ vous semblera a priori identique mais votre navigateur sait désormais que l'utilisateur 
+                doit saisir une adresse e-mail. Il peut afficher une indication si l'adresse n'est pas un e-mail, 
+                c'est ce que fait Firefoxpar exemple (figure suivante).
+            </p>
+            <input type="email">
+            
+            <h4>Une URL</h4>
+            <p>Même principe : si le champ ne vous semble pas différent sur votre ordinateur, 
+                sachez que celui-ci comprend bel et bien que le visiteur est censé saisir une adresse. 
+                Les navigateurs mobiles affichent par exemple un clavier adapté à la saisie d'URL (figure suivante).
+            </p>
+            <input type="url">
+
+            <h4>Numéro de téléphone</h4>
+            <p>Ce champ est dédié à la saisie de numéros de téléphone :</p>
+            <input type="tel">
+
+            <h4>Nombre</h4>
+            <p>Ce champ permet de saisir un nombre entier :</p>
+            <form>
+                <input type="number">
+            </form>
+            <p>
+                Le champ s'affichera en général avec des petites flèches pour changer la valeur.
+            </p>
+            <ul>
+                <li>
+                    <strong>min : </strong>valeur minimale autorisée.
+                </li>
+                <li>
+                    <strong>max : </strong>valeur maximale autorisée.
+                </li>
+                <li>
+                    <strong>step : </strong>c'est le « pas » de déplacement. Si vous indiquez un pas de 2, 
+                    le champ n'acceptera que des valeurs de 2 en 2 (par exemple 0, 2, 4, 6...).
+                </li>
+            </ul>
+
+            <h4>Un curseur</h4>
+            <p>Le type range permet de sélectionner un nombre avec un curseur (aussi appelé slider), 
+                comme à la figure suivante :
+            </p>
+            <input type="range">
+            <p>
+                Vous pouvez utiliser là aussi les attributs min, max et step pour restreindre les valeurs disponibles.
+            </p>
+
+            <h4>Couleur</h4>
+            <p>Ce champ permet de saisir une couleur :</p>
+            <input type="color">
+            <p>
+                En pratique, il reste assez peu mis en œuvre par les navigateurs à l'heure actuelle. 
+                Ne vous étonnez pas si vous voyez seulement un champ de texte classique.
+            </p>
+
+            <h4>Date</h4>
+            <p>Différents types de champs de sélection de date existent :</p>
+            <ul>
+                <li><strong>date : </strong>pour la date (05/08/1985 par exemple) ;</li>
+                <li><strong>time : </strong>pour l'heure (13:37 par exemple) ;</li>
+                <li><strong>week : </strong>pour la semaine ;</li>
+                <li><strong>month : </strong>pour le mois</li>
+                <li><strong>datetime : </strong>pour la date et l'heure (avec gestion du décalage horaire) ;</li>
+                <li><strong>datetime-local : </strong>pour la date et l'heure (sans gestion du décalage horaire).</li>
+            </ul>
+            <input type="date">
+
+            <h4>Recherche</h4>
+            <p>On peut créer un champ de recherche comme ceci :</p>
+            <input type="search">
+
+            <h3>Les éléments d'options</h3>
+
+            <h4>Les cases à cocher</h4>
+
+            <p>Exemple:</p>
+            <form method="post" action="traitement.php">
+                <p>
+                    Cochez les aliments que vous aimez manger :
+                    <br>
+                    <input type="checkbox" name="frites" id="frites"> <label for="frites">Frites</label><br />
+                    <input type="checkbox" name="steak" id="steak"> <label for="steak">Steak haché</label><br />
+                    <input type="checkbox" name="epinards" id="epinards"> <label for="epinards">Epinards</label>
+                    <br>
+                    <input type="checkbox" name="huitres" id="huitres"> <label for="huitres">Huitres</label> 
+                </p>
+            </form>
+
+            <h4>Les zones d'options</h4>
+
+            <p>
+                Les zones d'options vous permettent de faire un choix(et un seul) parmi une liste de possibilités. 
+                Elles ressemblent un peu aux cases à cocher mais il y a une petite difficulté supplémentaire : 
+                elles doivent être organisées en groupes. Les options d'un même groupe possèdent le même nom (name), 
+                mais chaque option doit avoir une valeur (value) différente. 
+                La balise à utiliser est toujours un <strong>&lt;input&gt;</strong>, avec cette fois la valeur radio pour l'attribut type. 
+                <br><br>
+                Les choses seront plus claires sur l'exemple ci-dessous :
+            </p>
+            <form method="post" action="traitement.php">
+                <p>
+                    Veuillez indiquer la tranche d'âge dans laquelle vous vous situez :
+                    <br>
+                    <input type="radio" name="age" value="moins15" id="moins15"> 
+                    <label for="moins15">Moins de 15 ans</label>
+                    <br>
+                    <input type="radio" name="age" value="medium15-25" id="medium15-25"> 
+                    <label for="medium15-25">15-25 ans</label>
+                    <br>
+                    <input type="radio" name="age" value="medium25-40" id="medium25-40"> 
+                    <label for="medium25-40">25-40 ans</label>
+                    <br>
+                    <input type="radio" name="age" value="plus40" id="plus40"> 
+                    <label for="plus40">Encore plus vieux que ça ?!</label>
+                </p>
+            </form>
+            <p><em>
+                Pourquoi avoir mis le même nom pour chaque option ? Tout simplement pour que le navigateur 
+                sache de quel « groupe » le bouton fait partie. Essayez d'enlever les attributs name, 
+                vous verrez qu'il devient possible de sélectionner tous les éléments d'options. 
+                Or, ce n'est pas ce que l'on veut, c'est pour cela qu'on les « lie » entre eux 
+                en leur donnant un nom identique.
+            </em></p>
+               
+            <p>Si vous avez deux zones d'options différentes, il faut donner un name unique à 
+                chaque groupe, comme ceci :
+            </p>
+
+            <form method="post" action="traitement.php">
+                <p>
+                    Veuillez indiquer la tranche d'âge dans laquelle vous vous situez :
+                    <br>
+                    <input type="radio" name="age" value="moins15" id="moins15">
+                    <label for="moins15">Moins de 15 ans</label>
+                    <br>
+                    <input type="radio" name="age" value="medium15-25" id="medium15-25">
+                    <label for="medium15-25">15-25 ans</label>
+                    <br>
+                    <input type="radio" name="age" value="medium25-40" id="medium25-40">
+                    <label for="medium25-40">25-40 ans</label>
+                    <br>
+                    <input type="radio" name="age" value="plus40" id="plus40">
+                    <label for="plus40">Encore plus vieux que ça ?!</label>
+                </p>
+                <p> 
+                    Sur quel continent habitez-vous ?
+                    <br>
+                    <input type="radio" name="continent" value="europe" id="europe">
+                    <label for="europe">Europe</label>
+                    <br>
+                    <input type="radio" name="continent" value="afrique" id="afrique">
+                    <label for="afrique">Afrique</label>
+                    <br>
+                    <input type="radio" name="continent" value="asie" id="asie">
+                    <label for="asie">Asie</label>
+                    <br>
+                    <input type="radio" name="continent" value="amerique" id="amerique">
+                    <label for="amerique">Amérique</label>
+                    <br>
+                    <input type="radio" name="continent" value="australie"
+                    id="australie"> <label for="australie">Australie</label> 
+                </p>
+            </form>
+                
+            <h4>Les listes déroulantes</h3>
+            <p>Les listes déroulantes sont un autre moyen élégant de faire un choixparmi plusieurs possibilités. 
+                Le fonctionnement est un peu différent. <br> On va utiliser la balise 
+                <strong>&lt;select&gt;&lt;&#47;select&gt;</strong> qui indique le début et la fin 
+                de la liste déroulante. On ajoute l'attribut name à la balise pour donner un nom à la liste.
+            </p>
+            <p>
+                Puis, à l'intérieur du <strong>&lt;select&gt;&lt;&#47;select&gt;</strong>, nous allons placer plusieurs 
+                balises <strong>&lt;option&gt;&lt;&#47;option&gt;</strong> (une par choix possible). <br>
+                On ajoute à chacune d'elles un attribut value pour pouvoir identifier ce que le visiteur a choisi. <br>
+                Voici un exemple d'utilisation :
+            </p>
+            <form method="post" action="traitement.php">
+                <p>
+                    <label for="pays">Dans quel pays habitez-vous ?</label>
+                    <br>
+                    <select name="pays" id="pays">
+                        <option value="france" selected>France</option>
+                        <option value="espagne">Espagne</option>
+                        <option value="italie">Italie</option>
+                        <option value="royaume-uni">Royaume-Uni</option>
+                        <option value="canada">Canada</option>
+                        <option value="etats-unis">États-Unis</option>
+                        <option value="chine">Chine</option>
+                        <option value="japon">Japon</option>
+                    </select> 
+                </p>
+            </form>
+            <p>
+                Si vous voulez qu'une option soit sélectionnée par défaut, utilisez cette fois l'attribut selected.
+            </p>
+
+            <br>
+
+            <p>Vous pouvez aussi grouper vos options avec 
+                la balise <strong>&lt;optgroup&gt;&lt;&#47;optgroup&gt;</strong>. 
+                Dans notre exemple, pourquoi ne pas séparer les pays en fonction de leur continent ?
+            </p>
+
+            <form method="post" action="traitement.php">
+                <p>
+                    <label for="pays">Dans quel pays habitez-vous ?</label>
+                    <br>
+                    <select name="pays" id="pays">
+                        <optgroup label="Europe">
+                            <option value="france">France</option>
+                            <option value="espagne">Espagne</option>
+                            <option value="italie">Italie</option>
+                            <option value="royaume-uni">Royaume-Uni</option>
+                        </optgroup>
+                        <optgroup label="Amérique">
+                            <option value="canada">Canada</option>
+                            <option value="etats-unis">Etats-Unis</option> </optgroup>
+                        <optgroup label="Asie">
+                            <option value="chine">Chine</option> <option value="japon">Japon</option>
+                        </optgroup> 
+                    </select>
+                </p> 
+            </form>
+
+            <h4>Regrouper les champs</h4>
+
+            <p>
+                Si votre formulaire grossit et comporte beaucoup de champs, il peut être utile de les regrouper 
+                au sein de plusieurs balises <strong>&lt;fieldset&gt;</strong>. 
+                <br>
+                Chaque <strong>&lt;fieldset&gt;</strong> peut contenir une légende avec la balise 
+                <strong>&lt;legend&gt;</strong>. 
+                <br>
+                Regardez cet exemple :
+            </p>
+
+            <form method="post" action="traitement.php"> 
+                <fieldset>
+                    <legend>Vos coordonnées</legend> <!-- Titre du fieldset --> 
+                    <label for="nom">Quel est votre nom ?</label>
+                    <input type="text" name="nom" id="nom">
+                    <br><br>
+                    <label for="prenom">Quel est votre prénom ?</label>
+                    <input type="text" name="prenom" id="prenom">
+                    <br><br>
+                    <label for="email">Quel est votre e-mail ?</label>
+                    <input type="email" name="email" id="email"> 
+                    <br><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Votre souhait</legend> <!-- Titre du fieldset -->
+                    <p>
+                        <input type="radio" name="souhait" value="riche" id="riche">
+                        <label for="riche">Etre riche</label>
+                        <br>
+                        <input type="radio" name="souhait" value="celebre" id="celebre">
+                        <label for="celebre">Etre célèbre</label>
+                        <br>
+                        <input type="radio" name="souhait" value="intelligent" id="intelligent">
+                        <label for="intelligent">Etre <strong>encore</strong> plus intelligent</label>
+                        <br>
+                        <input type="radio" name="souhait" value="autre" id="autre">
+                        <label for="autre">Autre...</label><br>
+                    </p> 
+                    <p>
+                        <label for="precisions">Si "Autre", veuillez préciser :</label>
+                        <br>
+                        <textarea name="precisions" id="precisions" cols="40" rows="4"></textarea>
+                    </p> 
+                </fieldset>
+            </form>
+
+            <h3>Sélectionner automatiquement un champ avec l'autofocus</h3>
+            <input type="text" name="prenom" id="prenom" autofocus>
+
+            <h3>Rendre un champ obligatoire</h3>
+            <p>Vous pouvez faire en sorte qu'un champ soit obligatoire en lui donnant l'attribut required.</p>
+            <input type="text" name="prenom" id="prenom" required>
+
+            <h3>Enfin, Le bouton d'envoi.</h3>
+            <p>Il ne nous reste plus qu'à créer le bouton d'envoi. Là encore, 
+                la balise <strong>&lt;input&gt;</strong> vient à notre secours. Elle existe en quatre versions :
+            </p>
+            <ul>
+                <li><strong>type="submit" :</strong> le principal bouton d'envoi de formulaire. 
+                    C'est celui que vous utiliserez le plus souvent. Le visiteur sera conduit à la page 
+                    indiquée dans l'attribut action du formulaire.
+                </li>
+                <li><strong>type="reset" :</strong> remise à zéro du formulaire.
+                </li>
+                <li><strong>type="image" :</strong> équivalent du bouton submit, présenté cette fois 
+                    sous forme d'image. Rajoutez l'attribut src pour indiquer l'URL de l'image.
+                </li>
+                <li><strong>type="button" :</strong> bouton générique, qui n'aura (par défaut) aucun effet. 
+                    En général, ce bouton est géré en JavaScript pour exécuter des actions sur la page. 
+                    Nous ne l'utiliserons pas ici.
+                </li>
+            </ul>
+            <p>Pour créer un bouton d'envoi on écrira donc par exemple :</p>
+            <input type="submit" value="Envoyer">
+
+            <hr>
+
+            <h3>Audio</h3>
+            <p>
+                Vous pouvez compléter la balise des attributs suivants :
+            </p>
+            <ul>
+                <li><strong>controls : </strong>pour ajouter les boutons « Lecture », « Pause » et la barre 
+                    de défilement. Cela peut sembler indispensable, et vous vous demandez peut-être pourquoi 
+                    cela n'y figure pas par défaut, mais certains sites web préfèrent créer eux- mêmes leurs 
+                    propres boutons et commander la lecture avec du JavaScript.
+                </li>
+                <li><strong>width : </strong>pour modifier la largeur de l'outil de lecture audio.</li>
+                <li><strong>loop : </strong>la musique sera jouée en boucle.</li>
+                <li><strong>autoplay : </strong>la musique sera jouée dès le chargement de la page. 
+                    Évitez d'en abuser, c'est en général irritant d'arriver sur un site qui 
+                    joue de la musique tout seul !
+                </li>
+                <li><strong>preload : </strong>indique si la musique peut être préchargée dès le chargement 
+                    de la page ou non. Cet attribut peut prendre les valeurs :
+                    <ul>
+                        <li><em><strong>auto</strong> (par défaut) : le navigateur décide s'il doit précharger 
+                            toute la musique, uniquement les métadonnées ou rien du tout.</em></li>
+                        <li><em><strong>metadata</strong> : charge uniquement les métadonnées (durée, etc.).</em></li>
+                        <li><em><strong>none</strong> : pas de préchargement. Utile si vous ne voulez pas gaspiller 
+                            de bande passante sur votre site.</em></li>
+                    </ul>
+                </li>
+            </ul>
+            <audio src="../audio/Jan Fleck - Ronin (Original Mix).mp3" controls></audio>
+
+            <h4>On a vu que certains navigateurs ne géraient pas le MP3, comment faire ?</h4>
+            <p>Il faut proposer plusieurs versions du fichier audio. 
+                Dans ce cas, on va construire notre balise comme ceci :
+            </p>
+            <p>Le navigateur prendra automatiquement le format qu'il reconnaît.</p>
+            <audio controls>
+                <!-- Format MP3 -->
+                <source src="../audio/Jan Fleck - Ronin (Original Mix).mp3">Mettez à jour votre navigateur !</source>
+                <!-- Format OGG -->
+                <source src="../audio/Jan Fleck - Ronin (Original Mix).ogg">Mettez à jour votre navigateur !</source>
+            </audio>
+            
+            <h3>Vidéo</h3>
+            <p>Il suffit d'une simple balise <strong>&lt;video&gt;</strong> pour insérer une vidéo dans la page :</p>
+            <video src="../video/flute_guy.mp4" controls width="600">Mettez à jour votre navigateur !</video>
+            <p>
+                Mais, là encore, vous risquez d'être déçus si vous utilisez seulement ce code. 
+                Aucun contrôle ne permet de lancer la vidéo ! Rajoutons quelques attributs (la plupart sont 
+                les mêmes que pour la balise <strong>&lt;audio&gt;</strong>) :
+                <ul>
+                    <li><strong>poster : </strong>image à afficher à la place de la vidéo tant que celle-ci 
+                        n'est pas lancée. Par défaut, le navigateur prend la première image de la vidéo mais, 
+                        comme il s'agit souvent d'une image noire ou d'une image peu représentative de la vidéo, 
+                        je vous conseille d'en créer une ! Vous pouvez tout simplement faire une capture d'écran 
+                        d'un moment de la vidéo.
+                    </li>
+                    <br>
+                    <li>
+                        <strong>controls : </strong>pour ajouter les boutons « Lecture », « Pause » 
+                        et la barre de défilement. Cela peut sembler indispensable, mais certains sites web 
+                        préfèrent créer eux-mêmes leurs propres boutons et commander la lecture avec du JavaScript. 
+                        En ce qui nous concerne, ce sera largement suffis
+                    </li>
+                    <br>
+                    <li>
+                    <strong>width : </strong>pour modifier la largeur de la vidéo.
+                    </li>
+                    <br>
+                    <li>
+                    <strong>height : </strong>pour modifier la hauteur de la vidéo.
+                    </li>
+                    <br>
+                    <li>
+                    <strong>loop : </strong>la vidéo sera jouée en boucle.
+                    </li>
+                    <br>
+                    <li>
+                    <strong>autoplay : </strong>la vidéo sera jouée dès le chargement de la page. 
+                        Là encore, évitez d'en abuser, c'est en général irritant d'arriver sur un site qui 
+                        lance quelque chose tout seul !
+                    </li>
+                    <br>
+                    <li><strong>preload : </strong>indique si la vidéo peut être préchargée dès le chargement de 
+                        la page ou non. Cet attribut peut prendre les valeurs :
+                        <ul>
+                            <li>
+                                <em><strong>auto</strong> (par défaut) : le navigateur décide s'il doit précharger 
+                                    toute la vidéo, uniquement les métadonnées ou rien du tout.</em></li>
+                            <li>
+                                <em><strong>metadata</strong> : charge uniquement les métadonnées 
+                                    (durée, dimensions, etc.).</em></li>
+                            <li>
+                                <em><strong>none</strong> : pas de préchargement. Utile si vous souhaitez éviter 
+                                    le gaspillage de bande passante sur votre site.</em></li>
+                        </ul>
+                    </li>
+                </ul>
+            </p>
+            <p>Comment contenter tous les navigateurs, puisque chacun reconnaît des formats vidéo différents ?</p>
+            <p>
+                Vous utiliserez la balise <strong>&lt;source&gt;</strong> à l'intérieur de la balise 
+                <strong>&lt;video&gt;</strong> pour proposer différents formats. <br>
+                Le navigateur prendra celui qu'il reconnaît :
+            </p>
+            <video controls poster="flute_guy.mp4" width="600"> 
+                <source src="../video/flute_guy.h.264">
+                <source src="../video/flute_guy.webm">
+                <source src="../video/flute_guy.ogv">
+            </video>
+
+        </section>
+
+        <br><br>
+
+        <footer>
+            <p>Copyright 2017</p>
+        </footer>
+    </body>
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- En-tête de la page -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Basic HTML5</title>
+    </head>
+
+    <body>
+        <!-- Corps de la page -->
+        <h1>Titre très important</h1>
+        <p>Bonjour et bienvenue sur ma page. Ceci est mon premier test alors soyez indulgents 
+            s'il vous plaît, j'apprends petit à petit comment cela marche.</p>
+        <h2>Titre important</h2>
+        <p>Pour l'instant c'est un peu vide, mais revenez dans 2-3 jours quand j'aurai appris un 
+            peu plus de choses, je vous assure que vous allez être surpris !</p>
+
+        <hr>
+        <h2>Les liens</h2>
+            <!-- Lien vers ancre, vu que c'est un ID appeler avec #mon-ancre -->
+        <a href="#mon-ancre">Aller vers mon ancre</a> <br><br>
+
+            <!-- Lien vers une ancre située dans une autre page -->
+            <!-- title="" permet de créer une info bulle en survolant le lien avec la souris -->
+            <!-- target="_blank" permet de forcer l'ouverture d'un nouvel onglet -->
+        <a href="../pages/page1.html#ancre-2" title="Ancre#2" target="_blank">Aller vers mon ancre #2</a> <br><br>
+
+        <!-- Lien vers Envoyer mail à adresse mail -->
+        <a href="mailto:bissickj@gmail.com">Envoyer moi un mail!</a> <br>
+        
+        <!-- Lien pour télécharger un fichier -->
+        <p>Mon fichier <a href="../download/fichier-download.jpg" title="fichier.jpeg" target="_blank">à télécharger!</a></p>
+        
+        <br><hr>
+
+        <h1>Title</h1>
+        <h2>Title</h2>
+        <h3>Title</h3>
+        <h4>Title</h4>
+        <h5>Title</h5>
+        <h6>Title</h6>
+
+        <p>Ceci est <em>un example de texte en italique.</em> Mais ce n'est pas tout. 
+        Je peux également mettre <strong>des mots en bold!</strong> N'est-ce pas <mark>fantastique</mark>?</p>
+    
+        <hr>
+
+        <h2>Les listes</h2>
+        
+        <h4>Deux types de liste:</h4>
+        
+        <p>-les listes non-ordonnées</p>
+
+        <p><em>créer une liste d'éléments sans notion d'ordre</em></p>
+            
+        <!-- <ul></ul> délimite toute la liste ; <li></li>délimite un élément de la liste (une puce). -->
+            <ul>
+                <li>Fraises</li>
+                <li>Framboises</li>
+                <li>Cerises</li>
+            </ul>
+
+
+        <p>-les listes ordonnées</p>
+        <!-- L'ordre dans lequel vous placez les éléments de la liste est important grâce à <ol></ol>. 
+            Le premier <li></li> sera l'élément n° 1, le second sera le n°2 etc... -->
+        <p><em>créer une liste d'éléments ordonnées</em></p>
+            <ol>
+                <li>Monday</li>
+                <li>Tuesday</li>
+                <li>Wednesday</li>
+                <li>Thursday</li>
+                <li>Friday</li>
+                <li>Saturday</li>
+                <li>Sunday</li>
+            </ol>
+    
+        <p>Bonjour. Je vous invite à visiter le site <a href="https://openclassrooms.com/">OpenClassroom.</a></p>
+            
+        <!-- Créer une ancre, la mettre en ID -->
+        <h2 id="mon-ancre">Les Images</h2>
+
+        <p><img src="http://md1.libe.com/photo/881776-k2-copie.jpg?modified_at=1464947001&width=960" alt="montagne" title="montagne"></p>
+        <br>
+
+        <!-- La photo en taille réel est indiquée en lien, on se sert de photo_mini.jpg comme lien comme on aurait pu le faire avec du texte -->
+        <p>
+            Vous souhaitez voir l'image dans sa taille d'origine ? Cliquez dessus !<br />
+            <a href="img/montagne.jpg"><img src="img/montagne_mini.jpg" alt="Photo de montagne" title="Cliquez pour agrandir" /></a> 
+        </p>
+
+        <br>
+
+        <figure>
+            <img src="./img/figure-1.png" alt="figure 1">
+            <figcaption>L'agencement des div html</figcaption>
+        </figure>
+
+        
+
+    </body>
+
+</html>
+
+
+<!-- 
+Hello World!
+
+<balise attribut="valeur"></balise>
+ -->

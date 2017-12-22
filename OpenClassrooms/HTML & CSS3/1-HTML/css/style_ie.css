@@ -1,0 +1,10 @@
+/* Si le navigateur est IE6 ou IE7, une seconde feuille de style CSS, style_ie.css, sera chargée et viendra 
+s'ajouter à la première. Dedans, nous ferons toutes nos « bidouilles » pour régler les problèmes liés 
+aux vieilles versions d'Internet Explorer, afin que notre site s'affiche correctement chez tout le monde, 
+même chez ceuxqui vivent encore à la préhistoire ;-) .
+*/
+
+nav, section {
+    display: inline;
+    zoom: 1; 
+}

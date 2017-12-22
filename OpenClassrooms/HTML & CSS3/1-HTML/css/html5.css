@@ -1,3 +1,20 @@
+h1, h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: left;
+}
+
+em {
+    font-style: oblique;
+}
+
+hr {
+    clear: both;
+}
+
+
 header {
     height: 50px;
     background-color: rgba(49, 49, 49, 0.651);
@@ -51,9 +68,49 @@ padding: 12px;
 margin-bottom: 20px;
 }
 
-hr {
-    clear: both;
+p.example-1 {
+    width: 250px;
+    height: 110px;
+    margin: auto; 
+    text-align: justify; 
+    border: 1px solid black;
 }
+
+p.example-2 {
+    width: 250px;
+    height: 110px;
+    margin: auto; 
+    text-align: justify; 
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+p.example-3 {
+    width: 250px;
+    height: 110px;
+    margin: auto; 
+    text-align: justify; 
+    border: 1px solid black;
+    overflow: auto;
+}
+
+p.example-4 {
+    width: 250px;
+    height: 110px;
+    margin: auto; 
+    text-align: justify; 
+    border: 1px solid black;
+}
+
+p.example-5 {
+    width: 250px;
+    height: 110px;
+    margin: auto; 
+    text-align: justify; 
+    border: 1px solid black;
+    word-wrap: break-word;
+}
+
 
 
 footer {
@@ -71,10 +128,17 @@ footer p {
     padding-top: 5px;
 }
 
-h1, h2 {
-    text-align: center;
-}
-h3 {
-    text-align: left;
+table {
+    border-collapse: collapse;
 }
 
+td, th {
+    border: 1px solid black;
+}
+
+/* On dispose de pseudo-formats en CSS pour changer le style des éléments requis (:required) 
+et invalides (:invalid). N'oubliez pas non plus que vous disposez du pseudo-format :focus pour changer 
+l'apparence d'un champ lorsque le curseur se trouve à l'intérieur. */
+input:required {
+    background-color: red;
+}
