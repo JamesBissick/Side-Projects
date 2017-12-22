@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Encodage pour les accents -->
+        <meta charset="UTF-8">
+        
+        <!-- Titre de la Page -->
+        <title>Javascript | Multiples Formulaires</title>
+
+        <!-- Pour Internet Explorer : S'assurer qu'il utilise la dernière version du moteur de rendu -->
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <!-- Affichage sans zoom pour les mobiles -->
+        <meta name="viewport" content="width=device-width, init-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Styles CSS -->
+        <link rel="stylesheet" href="./assets/css/style.css">
+
+        <!--  Font Awesome | Icons -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+        <!-- HTML5 Shiv & Respond JS -->
+        <!--[if lt IE 9]>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>
+        <![endif]-->
+        
+        
+        <style>
+            main {
+                text-align: center;
+                overflow: hidden;
+            }
+
+            main h2{
+                margin-bottom: 30px;
+            }
+
+            .barreProgression {
+                width: 50%;
+                margin-left: 25%;
+                margin-bottom: 50px;
+            }
+
+
+            main input {
+                margin-bottom: 20px;
+                border-radius: 5px;
+                padding: 5px;
+            }
+
+            main form div {
+                display: none;
+            }
+
+            main form .current {
+                display: block;
+            }
+        </style>
+        
+        
+    </head>
+
+    <body>
+        <main>
+            <h1>Inscription</h1>
+            <div class="progress barreProgression">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 20%"></div>
+            </div>
+
+            <h2>Identité</h2>
+
+            <form action="machin.php" id="myForm">
+                <div class="col-xs-12 current">
+                    <input type="text" placeholder="Prenom" id="prenom">
+                </div>
+
+                <div class="col-xs-12">
+                    <input type="text" placeholder="Email" id="email">
+                </div>
+
+                <div class="col-xs-12">
+                    <input type="text" placeholder="Telephone" id="tel">
+                </div>
+
+                <div class="col-xs-12">
+                    <input type="text" placeholder="Pseudo" id="pseudo">
+                </div>
+
+                <div class="col-xs-12 ">
+                    <input type="passeword" placeholder="Mot de Passe" id="mdp">
+                </div>
+                
+                <div class="col-xs-12 current">
+                    <input type="submit" id="submit" value="Envoyer !">
+                </div>
+
+
+            </form>
+        </main>
+
+
+        <!-- jQuery CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+        <!-- Bootstrap JS -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>        
+
+
+
+
+
+
+        <script>
+
+            /* --------------------------- CONSIGNES -------------------------------
+
+            ||||||    1)  Traiter les erreurs : champs manquants, bordures    ||||||
+            ||||||  rouges, notifications (avec animation si possible)        ||||||
+            ||||||                                                            ||||||
+            ||||||    2)  Afficher / cacher les inputs après un submit        ||||||
+            ||||||                                                            ||||||
+            ||||||    3)  Envoyer les données dans le tableau et l'afficher   ||||||
+            ||||||  avec des <ul> et <li>                                     ||||||
+
+            --------------------------------------------------------------------- */
+
+            var contacts = [
+                    {prenom: 'Etienne de Bazelaire de Ruppierre', email:'e.debaze@gmail.com', tel:'0623132875', pseudo: 'Etienne', mdp: 'azerty'},
+                    {prenom: 'Jesus de Nazareth', email:'j.denazar@gmail.com', tel:'0731254869', pseudo: 'Jesus', mdp: 'azerty'},
+                    {prenom: 'Marc Harrington', email:'m.harrington@gmail.com', tel:'0658974521', pseudo: 'Marc', mdp: 'azerty'},
+                    {prenom: 'Benjamin Barns', email:'b.barns@gmail.com', tel:'0623214547', pseudo: 'Benjamin', mdp: 'azerty'},
+                    {prenom: 'Adrien Scout', email:'a.scout@gmail.com', tel:'0698725461', pseudo: 'Adrien', mdp: 'azerty'},
+                ]
+        </script>
+
+
+        <script>
+            var tableau = {
+                prenom: '',
+                email: '',
+                tel: '',
+                pseudo: '',
+                mdp: '',
+            }
+            
+            $("#myForm").submit(function(e) {
+                // On empeche le formulaire de s'envoyer
+                e.preventDefault()
+                
+                // On stock le input prenom
+                var prenom = $('#prenom')
+            
+                // On envoie la valeur de prenom dans le tableau
+                tableau.prenom = prenom.val()
+
+                if (prenom.val().length == 0) {
+                    alert('Entrez votre nom!')
+                } else {
+                    // On incrémente la barre de progression
+                    $('.progress-bar').css('width', '40%')
+
+                    // On cache prenom
+                    prenom.parent().removeClass('current')
+
+                    // On stock l'email et le tel (<input>)
+                    var email = $('#email')
+                    var tel   = $('#tel')
+
+                    // Afficher les deux inputs suivants
+                    email.parent().addClass('current')
+                    tel.parent().addClass('current')
+
+                        if ((email.val() == "") || (tel.val() == "")) {
+                            if (email.val() == "") {
+                                email.css('border-color', 'red')
+                            } 
+
+                            if (tel.val() == "") {
+                                tel.css('border-color', 'red')
+                            } 
+                                
+                        } else {
+                            // On incrémente la barre de progression
+                            $('.progress-bar').css('width', '60%')
+
+                            // On envoie la valeur de prenom, dans le tableau
+                            tableau.email = email.val()
+                            tableau.tel   = tel.val()
+
+                            // On cache email et tel
+                            email.parent().removeClass('current')
+                            tel.parent().removeClass('current')
+
+                            // On stock le pseudo et le mdp
+                            var pseudo = $('#pseudo')
+                            var mdp    = $('#mdp')
+                          
+
+                            // Afficher les deux input suivants
+                            pseudo.parent().addClass('current')
+                            mdp.parent().addClass('current')
+
+                            if ((pseudo.val() == "") || (mdp.val() == "")) {
+                                if (pseudo.val() == "") {
+                                    pseudo.css('border-color', 'red')
+                                } 
+
+                                if (mdp.val() == "") {
+                                    mdp.css('border-color', 'red')
+                                } 
+                            } else {
+
+                                // On envoie la valeur de prenom, dans le tableau
+                                tableau.pseudo = pseudo.val()
+                                tableau.mdp    = mdp.val()
+
+                                // On incrémente la barre de progression
+                                $('.progress-bar').css('width', '100%')
+
+                                // On cache tout
+                                $('.current').removeClass('current')
+
+                                // Message de réussite
+                                $('main').append('<div class="alert alert-success"><strong>Success!</strong></div>')
+
+                                contacts.push(tableau)
+                                
+                                for (let i=0; i<contacts.length; i++) {
+                                    console.log(i)
+                                }
+
+                            }
+                        }
+
+                }
+            
+            
+            
+            })
+            
+        </script>
+        
+   </body>
+</html>

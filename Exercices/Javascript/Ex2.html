@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Encodage pour les accents -->
+        <meta charset="UTF-8">
+        
+        <!-- Titre de la Page -->
+        <title>Javascript | Multiples Formulaires</title>
+
+        <!-- Pour Internet Explorer : S'assurer qu'il utilise la dernière version du moteur de rendu -->
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <!-- Affichage sans zoom pour les mobiles -->
+        <meta name="viewport" content="width=device-width, init-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!--  Font Awesome | Icons -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+        <!-- HTML5 Shiv & Respond JS -->
+        <!--[if lt IE 9]>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>
+        <![endif]-->
+
+        <style>
+            .rouge {
+                width: 80%;
+                height: 380px;
+                margin: 0 auto;
+                border: 2px solid red;
+            }
+            .vert {
+                width: 80%;
+                height: 380px;
+                margin: 0 auto;
+                border: 2px dashed green;
+            }
+            .bleu {
+                width: 80%;
+                height: 380px;
+                margin: 0 auto;
+                border: 20px solid blue;
+            }
+        </style>
+        
+    </head>
+<body>
+
+    <div>
+        <div class="d1">
+            <div>
+                <div>
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div>
+
+                </div>
+
+                <div>
+                    <article>
+                        bouton
+                    </article>
+                </div>
+
+                <div>
+
+                </div>
+            </div>
+
+            <div>
+                <div class="d2">
+
+                </div>
+
+                <div>
+                    <div>
+
+                    </div>
+                </div>
+
+                <div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    
+         <!-- jQuery CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+        <!-- Bootstrap JS -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>        
+
+
+
+
+
+	<script>
+                        /* -----------------------------------------------------------------------------------------------
+
+                                                            -----------------
+                                                            |   CONSIGNES   |
+                                                            -----------------
+
+
+                                1 - Creer un <input type="button"> à la fin de la div article 					(1 point)
+
+                                2 - Lorsque l'on clique sur le bouton, faire en sorte qu'article obtienne		(2 points)
+                            les propriété suivante :  - Fond de couleur gris
+                                                      - Largeur de 80%
+                                                      - Hauteur de 120px;
+
+                                3 - Ajouter la classe "rouge" à la div ".d1" lorsque l'on clique sur le			(3 points)
+                            bouton en partant du bouton (utiliser les parents et enfants, n'utilisez pas $('.d1') ! )
+
+                                4 - Même question avec la div ".d2" en partant de la div ".d1"					(4 points)
+
+                                5 - Lorsque le bouton a été cliqué 3 fois, ajouter la classe "vert" à toutes les <div>
+                            SAUF les <div> ".rouge" qui elles devront recevoir la classe "bleu"					(5 points)
+
+
+
+                        ----------------------------------------------------------------------------------------------- */
+    </script>
+
+    <script>
+        $(function() {
+
+            var i = 0
+
+            // On ajoute un <input type="button"> dans <article>
+            $('article').append('<input type="button">');
+            
+            // On écoute le clique sur <input>
+            $('input').click(function(e){
+                
+                // Changer le css de <article>
+                $('article').css('background-color','grey').css('width','80%').css('height','120px');                       
+
+                // Stocker la div <input>
+                var button = $('input');
+                var div1   = $('.d1');
+
+                
+                // Atteindre .d1 en partant du bouton
+                button.parent().parent().parent().parent().addClass('rouge');
+
+                // Atteindre .d2 en partant de d1
+                div1.children().last().children().first().addClass('rouge');              
+
+                // Faire le changement de couleurs au 3eme clique
+                i++;
+
+                if (i==3) {
+                    $('div').addClass('vert')
+                    $('.d1').addClass('bleu')
+                    $('.rouge').removeClass().addClass('bleu')
+                }
+                
+                
+            })
+        })
+    </script>
+</body>
+</html>
