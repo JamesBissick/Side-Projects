@@ -95,9 +95,67 @@
 
             // Arrays
 
-            
+            $prenom = array("Jean-Michel","Christophe","Kevin","Jason","Dylan","Jennifer","Donovan");
+            print "$prenom[3]";
 
+            // Associative Arrays (associate (a) value(s) to a value inside of it)
+
+            $id = array(
+                'Prenom' => "Patty",
+                'Nom' => "Smith",
+                'Age' => 47);
             
+            print_r ($id); // print_r let you print the chosen var literally, in it's entirety
+            
+            print "<br><br>";
+            
+            // Browse through an array
+
+            $pays = array(
+                'Europe' => 'France','Germany','UK',
+                'North America' => 'Canada','USA',
+                'Asia' => 'China','South Korea','Japan'
+            );
+            foreach ($pays as $region => $elements) { // we use foreach instead of for loop cause it allows us to browse associative arrays
+                print $region . ':' . $elements . '<br>';
+            }
+
+            print "<br><br>";
+
+            // Searching in an array
+
+            // -- array_key_exists : pour vérifier si une clé existe dans l'array ;
+            if (array_key_exists('Europe',$pays)){ 
+                print 'Key "Europe" exists in the array.';
+            } else {
+                print 'Key "Europe" doesn\'t exist in the array';
+            };
+
+            print "<br><br>";
+
+            // -- in_array : pour vérifier si une valeur existe dans l'array ;
+            if (in_array('China',$pays)){
+                print 'Value "China" is in the array.';
+            } else {
+                print 'Value "China" is not in the array.';
+            }
+
+            print "<br><br>";
+
+            // -- array_search : pour récupérer la clé d'une valeur dans l'array.
+            $fruits = array ('Banane', 'Pomme', 'Poire', 'Cerise', 'Fraise', 'Framboise');
+
+            $position = array_search('Fraise', $fruits);
+            echo '"Fraise" se trouve en position ' . $position . '<br />';
+
+            $position = array_search('Banane', $fruits);
+            echo '"Banane" se trouve en position ' . $position;
+
+            // -- strlen: longueur d'une chaîne
+
+            $phrase = ''
+
+
         ?>
         
         
