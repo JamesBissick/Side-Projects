@@ -153,8 +153,11 @@
 
             // -- strlen: longueur d'une chaîne
 
-            $phrase = ''
+            $phrase = 'A sea turtle’s sex is determined by the temperature of the sand it’s born in; 
+            rising global temperatures mean that female green sea turtles now outnumber males 116 to 1.';
 
+            print $phrase;
+            
 
         ?>
         
