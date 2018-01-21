@@ -165,12 +165,6 @@
 
             // -- strlen: longueur d'une chaîne
 
-<<<<<<< HEAD
-            $phrase = 'A sea turtle’s sex is determined by the temperature of the sand it’s born in; 
-            rising global temperatures mean that female green sea turtles now outnumber males 116 to 1.';
-
-            print $phrase;
-=======
             $phrase = 'A sea turtle’s sex is determined by the temperature of the sand it’s born in 
             rising global temperatures mean that female green sea turtles now outnumber males 116 to 1.';
 
@@ -218,7 +212,6 @@
 
             $volume = VolumeCone(3, 1);
             echo 'Le volume d\'un cône de rayon 3 et de hauteur 1 est de ' . $volume;
->>>>>>> 9342ce1f00e44b6fa4b9c1e7683689677931babb
             
 
         ?>
