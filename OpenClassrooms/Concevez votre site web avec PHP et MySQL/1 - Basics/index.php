@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8" />
+        <meta charset="utf-8">
         <title>Ceci est une page HTML de test</title>
     </head>
     <body>
@@ -50,6 +50,8 @@
                 
             }
             print "<br><br>";
+            print "----------------------------------------------";
+            print "<br><br>";
             
 
             // Test program cookies
@@ -92,6 +94,8 @@
             }
 
             print "<br><br>";
+            print "----------------------------------------------";
+            print "<br><br>";
 
             // Arrays
 
@@ -132,6 +136,8 @@
             };
 
             print "<br><br>";
+            print "----------------------------------------------";
+            print "<br><br>";
 
             // -- in_array : pour vérifier si une valeur existe dans l'array ;
             if (in_array('China',$pays)){
@@ -140,6 +146,8 @@
                 print 'Value "China" is not in the array.';
             }
 
+            print "<br><br>";
+            print "----------------------------------------------";
             print "<br><br>";
 
             // -- array_search : pour récupérer la clé d'une valeur dans l'array.
@@ -150,18 +158,72 @@
 
             $position = array_search('Banane', $fruits);
             echo '"Banane" se trouve en position ' . $position;
+            print "<br><br>";
+            print "----------------------------------------------";
+
+            print "<br><br>";
 
             // -- strlen: longueur d'une chaîne
 
+<<<<<<< HEAD
             $phrase = 'A sea turtle’s sex is determined by the temperature of the sand it’s born in; 
             rising global temperatures mean that female green sea turtles now outnumber males 116 to 1.';
 
             print $phrase;
+=======
+            $phrase = 'A sea turtle’s sex is determined by the temperature of the sand it’s born in 
+            rising global temperatures mean that female green sea turtles now outnumber males 116 to 1.';
+
+            print $phrase;
+            print "<br>";
+            print "The sentence above has " . strlen($phrase) . " characters.";
+
+            print "<br><br>";
+            
+            // -- str_replace: rechercher et remplacer
+
+            $ma_variable = str_replace('b', 'p', 'bim bam boum');
+            echo $ma_variable;
+
+            print "<br><br>";
+
+            // -- str_shuffle: mélanger les lettres
+
+            $chaine = "I am a sentence and I'm about to be mixed.";
+            $chaine = str_shuffle($chaine);
+            echo $chaine;
+
+            print "<br><br>";
+
+
+            // -- Enregistrons les informations de date dans des variables
+
+            $jour = date('d');
+            $mois = date('m');
+            $annee = date('Y');
+
+            $heure = date('H');
+            $minute = date('i');
+
+            print "<br><br>";
+
+            // -- Calculer le volume d'un cône
+
+            // ---- Ci-dessous, la fonction qui calcule le volume du cône
+            function VolumeCone($rayon, $hauteur)
+            {
+            $volume = $rayon * $rayon * 3.14 * $hauteur * (1/3); // calcul du volume
+            return $volume; // indique la valeur à renvoyer, ici le volume
+            }
+
+            $volume = VolumeCone(3, 1);
+            echo 'Le volume d\'un cône de rayon 3 et de hauteur 1 est de ' . $volume;
+>>>>>>> 9342ce1f00e44b6fa4b9c1e7683689677931babb
             
 
         ?>
         
-        
+        <br><br><br><br><br><br>
         <p>Aujourd'hui nous sommes le <?php echo date('d/m/Y h:i:s'); ?>.</p>
 
     </body>
