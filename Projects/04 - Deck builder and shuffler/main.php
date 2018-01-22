@@ -11,6 +11,8 @@ $faces = array (
     "Nine", "Ten", "Jack", "Queen", "King", "Ace"
 );
 
+
+//Building a deck array
 $deck = array();
  
 foreach ($suits as $suit) {
@@ -18,5 +20,13 @@ foreach ($suits as $suit) {
         $deck[] = array ("face"=>$face, "suit"=>$suit);
     }
 }
+
+//Shuffling the deck and drawing a random card  
+
+shuffle($deck);
+ 
+$card = array_shift($deck);
+ 
+echo $card['face'] . ' of ' . $card['suit'];
 
 ?>
