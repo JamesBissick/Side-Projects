@@ -1,9 +1,7 @@
 <?php
 // Connexion à la bdd minichat
-try
-{
-	$bdd = new PDO('mysql:host=localhost;dbname=minichat;charset=utf8', 'root', '');
-}
+
+$bdd = new PDO('mysql:host=localhost;dbname=minichat;charset=utf8', 'root', '');
 
 // Enregistrer les messages dans le tableau data
 $req = $bdd->prepare('INSERT INTO data (pseudo, message) VALUES(?, ?)');
