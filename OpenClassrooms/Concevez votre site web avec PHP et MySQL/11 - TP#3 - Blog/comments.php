@@ -31,21 +31,6 @@
         ?>
         <h2>Commentaires</h2>
 
-        <?php
-        $req->closeCursor();
-
-        // Récupération des commentaires
-        $req = $bdd->prepare('SELECT author, comments, date_comment FROM comments WHERE ID_articles = ? ORDER BY date_comment');
-        $req->execute(array($_GET['ID_articles']));
-
-        while ($donnees = $req->fetch())
-        {
-        ?>
-        <p><strong><?php echo htmlspecialchars($donnees['athor']); ?></strong> le <?php echo $donnees['date_comment']; ?></p>
-        <p><?php echo nl2br(htmlspecialchars($donnees['comment'])); ?></p>
-        <?php
-        }
-        $req->closeCursor();
-        ?>
+    
     </body>
 </html>
