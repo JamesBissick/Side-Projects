@@ -1,0 +1,5 @@
+<##> Something to note  <##>
+
+I created a column in the table users, created which is for when this user was created.
+It's set up on timestamp, with an attribute of ON UPDATE CURRENT_TIMESTAMP so that
+each new users we had to the database, they will all have a date of creation automatically.
