@@ -6,7 +6,7 @@
 //B. Connecting to a database
     $db = new PDO('mysql:host=127.0.0.1;dbname=pdo', 'root', '');
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
+    // ERRMODE_EXCEPTION is recommended, but you can also use ERRMODE_WARNING
     try {
         $db->query("INVALID");
     } catch(PDOException $e) {

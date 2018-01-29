@@ -1,0 +1,41 @@
+h1 {
+    text-align:center;
+}
+
+h2 {
+    font-size:1.4em;
+    margin-top: 25px;
+    margin-left:20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.headband {
+    background-color:#4169E1;
+    padding: 10px 10px; 
+}
+
+article {
+    width: 90%;
+    margin: 25px auto;
+}
+
+
+p.articles {
+    background-color:#CCCCCC;
+    margin: 0px 15px;
+    padding: 20px 25px;
+}
+
+p.author {
+    float: left;
+    margin-bottom: 250px;
+}
+
+a.read_comments {
+    float: right;
+    margin-right: 50px;
+    
+}

@@ -8,7 +8,7 @@
     //var_dump($db); it is: object(PDO)#1 (0) { }
     $users = $db->query("
         UPDATE users
-        SET lastname = 'Smith'
+        SET lastname = 'Cooper'
         WHERE id = 1
     ");
     var_dump($users); // object(PDOStatement)#2 (1) { ["queryString"]=> string(78) " UPDATE users SET lastname = 'Smith' WHERE id = 1 " }
