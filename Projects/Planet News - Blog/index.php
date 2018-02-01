@@ -12,7 +12,7 @@
             <a href="index.php">Planet News</a>
         </h1>
         <div class="logo">
-            <img src="./img/news.png" alt="Planet News">
+            <img src="./img/news.png" alt="planetnews">
         </div>
         
         <div class="headband"></div>
