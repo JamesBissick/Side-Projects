@@ -1,29 +1,21 @@
-var cat = {
-    "name": "Meowsalot",
-    "species": "cat",
-    "favFood": "tuna"
+var ourRequest = new XMLHttpRequest();
+
+// Tell our variable to do receive data ('GET', url)
+ourRequest.open('GET', 'https://learnwebcode.github.io/json-example/animals-1.json');
+
+ourRequest.onload = function() {
+    // Let's create a variable, by deafault read as simple text, we tell it to read as JSON
+    var ourData = JSON.parse(ourRequest.responseText);
+    // Let get the first object of the data printed out
+    console.log(ourData[0]);
 };
 
-var myFavColors = ["blue", "green", "red"];
+ourRequest.send();
 
-// One variable for multiple pets
-var thePets = [
-    {
-        "name": "Meowsalot",
-        "species": "cat",
-        "favFood": "tuna"
-    }, 
-    {
-        "name": "Barky",
-        "species": "dog",
-        "favFood": "sausages"
-    }, 
-    {
-        "name": "Slolly",
-        "species": "turtle",
-        "favFood": "vegetables"
-    }
-]
-// This format is called JSON (Java Script Object Notation)
-// What if we want to access Slolly's favourite food?
-thePets[2].favFood;
+// Congratulation, you just wrote some AJAX!
+/* 
+A: Asynchronous
+J: Javascript
+A: And
+X: XML (XML was replaced by JSON as it became a more popular format)
+*/
