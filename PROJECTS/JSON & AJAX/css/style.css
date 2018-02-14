@@ -1,0 +1,53 @@
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    font-size: 46px;
+}
+
+header {
+    text-align: center;
+}
+
+/* Gets rid of that blue outline selector browsers have by default */
+#button:focus {
+    outline: none;
+}
+
+#button {
+    user-select: none;
+    text-align: center;
+    clear: both;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 36px;
+    color: white;
+    background-color: rgba(0, 94, 128, 0.919);
+    border-radius: 5px;
+    box-shadow: darkslategrey 3px 3px 9px;
+    border-color: rgba(4, 76, 102, 0.919);
+
+    /* Valeurs spécifiques à WebKit */
+    -webkit-user-select: none;
+    cursor: pointer;
+    /* Smoothing out hover using css3 transitions, if not, the pressed button effect looks a bit hard */
+    transition: all 0.2s ease;
+}
+
+/* Imitate a pressed effect for buttons */
+#button:active {
+    box-shadow: 0px 0px rgba(4, 76, 102, 0.919);
+    top: 6px;
+    transform: translateY(2px);
+}
+
+/* Hide the button, with a smooth transistion on */
+#button.hide-me {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 1.3s, opacity 1.0s linear;
+}
+#animal-info {
+
+    text-align: center
+}
