@@ -10,7 +10,7 @@ button.addEventListener("click", function() {
     ourRequest.open('GET', 'https://learnwebcode.github.io/json-example/animals-' + pageCounter + '.json');
 
     ourRequest.onload = function() {
-        // Let's create a variable, by deafault read as simple text, we tell it to read as JSON
+        // Let's create a variable, by default read as simple text, we tell it to read as JSON
         var ourData = JSON.parse(ourRequest.responseText);
         /* 
         // Let get the first object of the data printed out

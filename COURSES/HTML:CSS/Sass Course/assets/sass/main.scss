@@ -1,0 +1,92 @@
+// Imported Fonts
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+// Fonts Variables
+$ShadowsIntoLight : 'Shadows Into Light Two', cursive;
+$Quicksand : 'Quicksand', sans-serif;
+
+// Color Variables
+$RedOrange : #FE4534;
+$Carnation : #FD5D5B;
+$GoldenTanoi : #FFBC4B;
+$Shamerock : #32DD92;
+$SoapStone : #EDE4D8;
+
+// Sizes
+$small : 0.8em;
+$medium : 1em;
+$large : 1.6em;
+$huge : 3em;
+
+body {
+    width: 80%;
+    margin: auto;
+}
+
+h1, h2, h3 {
+    font-family: $ShadowsIntoLight;
+}
+h1 {
+    font-size: $huge;
+}
+
+p {
+    font-family: $Quicksand;
+}
+
+a {
+    color: $Carnation;
+}
+
+nav {
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+    li {
+        list-style: none;
+        float: left;
+        margin-left: 10px;
+        a {
+            display: block;
+            padding: 10px;
+            color: $SoapStone;
+            background-color: $Carnation;
+            text-decoration: none;
+        }
+    }
+}
+
+.group:before, .group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    zoom: 1;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 15px;
+    margin-right: 10px;
+    border: 1px solid $GoldenTanoi;
+    background-color: $GoldenTanoi;
+    color: $SoapStone;
+    border-radius: 6px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.btn-2 {
+    @extend .btn-1; // Inherit from btn-1 
+    background-color: $Shamerock;
+    border: 1px solid $Shamerock;
+    color: $SoapStone;
+}

@@ -1,3 +1,73 @@
-* {
-  color: red;
+@import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two");
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+body {
+  width: 80%;
+  margin: auto;
+}
+
+h1, h2, h3 {
+  font-family: "Shadows Into Light Two", cursive;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+p {
+  font-family: "Quicksand", sans-serif;
+}
+
+a {
+  color: #FD5D5B;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  list-style: none;
+  float: left;
+  margin-left: 10px;
+}
+
+nav li a {
+  display: block;
+  padding: 10px;
+  color: #EDE4D8;
+  background-color: #FD5D5B;
+  text-decoration: none;
+}
+
+.group:before, .group:after {
+  content: "";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  zoom: 1;
+}
+
+.btn-1, .btn-2 {
+  display: inline-block;
+  padding: 15px;
+  margin-right: 10px;
+  border: 1px solid #FFBC4B;
+  background-color: #FFBC4B;
+  color: #EDE4D8;
+  border-radius: 6px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.btn-2 {
+  background-color: #32DD92;
+  border: 1px solid #32DD92;
+  color: #EDE4D8;
 }
